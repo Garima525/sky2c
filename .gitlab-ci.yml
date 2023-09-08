@@ -12,4 +12,4 @@ deploy:
   script:
     - scp -r * root@15.207.56.8:/var/www/html/sky2git/sky2c
   only:
-    - master
+    - main
