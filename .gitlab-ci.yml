@@ -1,0 +1,15 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "Building your application..."
+
+deploy:
+  stage: deploy
+  script:
+    - scp -r * root@15.207.56.8:/var/www/html/sky2git
+  only:
+    - master
