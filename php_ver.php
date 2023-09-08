@@ -1,0 +1,1 @@
+<h2>New server:216.237.126.3<?php echo date("y-m-d"); ?></h2><?php phpinfo(); ?>

@@ -1,0 +1,219 @@
+[14-Jan-2023 10:24:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/sky2co/public_html/wp-admin/includes/admin-filters.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/admin-filters.php on line 11
+[14-Jan-2023 10:25:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/sky2co/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/admin.php on line 16
+[14-Jan-2023 10:27:10 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-automatic-upgrader-skin.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-automatic-upgrader-skin.php on line 21
+[14-Jan-2023 10:27:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Bulk_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-bulk-plugin-upgrader-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-bulk-plugin-upgrader-skin.php on line 18
+[14-Jan-2023 10:28:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Bulk_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-bulk-theme-upgrader-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-bulk-theme-upgrader-skin.php on line 18
+[14-Jan-2023 10:29:06 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-bulk-upgrader-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-bulk-upgrader-skin.php on line 18
+[14-Jan-2023 10:29:45 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader' not found in /home/sky2co/public_html/wp-admin/includes/class-core-upgrader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-core-upgrader.php on line 21
+[14-Jan-2023 10:32:19 UTC] PHP Fatal error:  Uncaught Error: Class 'ftp_base' not found in /home/sky2co/public_html/wp-admin/includes/class-ftp-pure.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-ftp-pure.php on line 28
+[14-Jan-2023 10:32:58 UTC] PHP Fatal error:  Uncaught Error: Class 'ftp_base' not found in /home/sky2co/public_html/wp-admin/includes/class-ftp-sockets.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-ftp-sockets.php on line 28
+[14-Jan-2023 10:34:14 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-language-pack-upgrader-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-language-pack-upgrader-skin.php on line 18
+[14-Jan-2023 10:34:53 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader' not found in /home/sky2co/public_html/wp-admin/includes/class-language-pack-upgrader.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-language-pack-upgrader.php on line 19
+[14-Jan-2023 10:36:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-plugin-installer-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-plugin-installer-skin.php on line 18
+[14-Jan-2023 10:36:50 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-plugin-upgrader-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-plugin-upgrader-skin.php on line 18
+[14-Jan-2023 10:37:28 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader' not found in /home/sky2co/public_html/wp-admin/includes/class-plugin-upgrader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-plugin-upgrader.php on line 21
+[14-Jan-2023 10:38:07 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-theme-installer-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-theme-installer-skin.php on line 18
+[14-Jan-2023 10:38:46 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-theme-upgrader-skin.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-theme-upgrader-skin.php on line 18
+[14-Jan-2023 10:39:26 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Upgrader' not found in /home/sky2co/public_html/wp-admin/includes/class-theme-upgrader.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-theme-upgrader.php on line 21
+[14-Jan-2023 10:40:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Walker' not found in /home/sky2co/public_html/wp-admin/includes/class-walker-category-checklist.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-walker-category-checklist.php on line 19
+[14-Jan-2023 10:40:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Walker_Nav_Menu' not found in /home/sky2co/public_html/wp-admin/includes/class-walker-nav-menu-checklist.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-walker-nav-menu-checklist.php on line 16
+[14-Jan-2023 10:41:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Walker_Nav_Menu' not found in /home/sky2co/public_html/wp-admin/includes/class-walker-nav-menu-edit.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-walker-nav-menu-edit.php on line 17
+[14-Jan-2023 10:42:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Automatic_Upgrader_Skin' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-ajax-upgrader-skin.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-ajax-upgrader-skin.php on line 19
+[14-Jan-2023 10:42:43 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-application-passwords-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-application-passwords-list-table.php on line 17
+[14-Jan-2023 10:43:59 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-comments-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-comments-list-table.php on line 17
+[14-Jan-2023 10:46:37 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Filesystem_Base' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-direct.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-direct.php on line 16
+[14-Jan-2023 10:47:16 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Filesystem_Base' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-ftpext.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 16
+[14-Jan-2023 10:47:55 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Filesystem_Base' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-ftpsockets.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-ftpsockets.php on line 16
+[14-Jan-2023 10:48:36 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Filesystem_Base' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-ssh2.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-filesystem-ssh2.php on line 36
+[14-Jan-2023 10:50:38 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-links-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-links-list-table.php on line 17
+[14-Jan-2023 10:51:17 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-list-table-compat.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-list-table-compat.php on line 15
+[14-Jan-2023 10:52:35 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-media-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-media-list-table.php on line 17
+[14-Jan-2023 10:53:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-ms-sites-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-ms-sites-list-table.php on line 17
+[14-Jan-2023 10:53:50 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-ms-themes-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-ms-themes-list-table.php on line 17
+[14-Jan-2023 10:54:30 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-ms-users-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-ms-users-list-table.php on line 17
+[14-Jan-2023 10:55:09 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-plugin-install-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-plugin-install-list-table.php on line 17
+[14-Jan-2023 10:55:48 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-plugins-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-plugins-list-table.php on line 17
+[14-Jan-2023 10:56:27 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Comments_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-post-comments-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-post-comments-list-table.php on line 17
+[14-Jan-2023 10:57:05 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-posts-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-posts-list-table.php on line 17
+[14-Jan-2023 10:57:43 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php on line 11
+[14-Jan-2023 10:57:43 UTC] PHP Warning:  require_once(ABSPATHwp-admin/includes/class-wp-privacy-requests-table.php): failed to open stream: No such file or directory in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php on line 11
+[14-Jan-2023 10:57:43 UTC] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHwp-admin/includes/class-wp-privacy-requests-table.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php on line 11
+[14-Jan-2023 10:58:22 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php on line 11
+[14-Jan-2023 10:58:22 UTC] PHP Warning:  require_once(ABSPATHwp-admin/includes/class-wp-privacy-requests-table.php): failed to open stream: No such file or directory in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php on line 11
+[14-Jan-2023 10:58:22 UTC] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHwp-admin/includes/class-wp-privacy-requests-table.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php on line 11
+[14-Jan-2023 10:59:39 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-requests-table.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-privacy-requests-table.php on line 10
+[14-Jan-2023 11:02:54 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-terms-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-terms-list-table.php on line 17
+[14-Jan-2023 11:03:34 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Themes_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-theme-install-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-theme-install-list-table.php on line 17
+[14-Jan-2023 11:04:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-themes-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-themes-list-table.php on line 17
+[14-Jan-2023 11:05:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function _deprecated_file() in /home/sky2co/public_html/wp-admin/includes/class-wp-upgrader-skins.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-upgrader-skins.php on line 11
+[14-Jan-2023 11:06:11 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/sky2co/public_html/wp-admin/includes/class-wp-upgrader.php on line 13
+[14-Jan-2023 11:06:11 UTC] PHP Warning:  require_once(ABSPATHwp-admin/includes/class-wp-upgrader-skin.php): failed to open stream: No such file or directory in /home/sky2co/public_html/wp-admin/includes/class-wp-upgrader.php on line 13
+[14-Jan-2023 11:06:11 UTC] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHwp-admin/includes/class-wp-upgrader-skin.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/sky2co/public_html/wp-admin/includes/class-wp-upgrader.php on line 13
+[14-Jan-2023 11:06:51 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/class-wp-users-list-table.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/class-wp-users-list-table.php on line 17
+[14-Jan-2023 11:08:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/sky2co/public_html/wp-admin/includes/continents-cities.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/continents-cities.php on line 12
+[14-Jan-2023 11:10:05 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Privacy_Data_Export_Requests_List_Table' not found in /home/sky2co/public_html/wp-admin/includes/deprecated.php:1530
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/deprecated.php on line 1530
+[14-Jan-2023 11:10:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/sky2co/public_html/wp-admin/includes/edit-tag-messages.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/edit-tag-messages.php on line 14
+[14-Jan-2023 11:11:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/sky2co/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/file.php on line 16
+[14-Jan-2023 11:15:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_network_admin() in /home/sky2co/public_html/wp-admin/includes/menu.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/menu.php on line 9
+[14-Jan-2023 11:17:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/sky2co/public_html/wp-admin/includes/ms-admin-filters.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/ms-admin-filters.php on line 11
+[14-Jan-2023 11:19:32 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/sky2co/public_html/wp-admin/includes/nav-menu.php on line 11
+[14-Jan-2023 11:19:32 UTC] PHP Warning:  require_once(ABSPATHwp-admin/includes/class-walker-nav-menu-edit.php): failed to open stream: No such file or directory in /home/sky2co/public_html/wp-admin/includes/nav-menu.php on line 11
+[14-Jan-2023 11:19:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHwp-admin/includes/class-walker-nav-menu-edit.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/sky2co/public_html/wp-admin/includes/nav-menu.php on line 11
+[14-Jan-2023 11:25:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_charset_collate() on null in /home/sky2co/public_html/wp-admin/includes/schema.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-admin/includes/schema.php on line 23
+[14-Jan-2023 11:27:06 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/sky2co/public_html/wp-admin/includes/template.php on line 12
+[14-Jan-2023 11:27:06 UTC] PHP Warning:  require_once(ABSPATHwp-admin/includes/class-walker-category-checklist.php): failed to open stream: No such file or directory in /home/sky2co/public_html/wp-admin/includes/template.php on line 12
+[14-Jan-2023 11:27:06 UTC] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHwp-admin/includes/class-walker-category-checklist.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/sky2co/public_html/wp-admin/includes/template.php on line 12
+[14-Jan-2023 11:30:57 UTC] PHP Warning:  Use of undefined constant WP_CONTENT_DIR - assumed 'WP_CONTENT_DIR' (this will throw an Error in a future version of PHP) in /home/sky2co/public_html/wp-admin/includes/upgrade.php on line 12
+[14-Jan-2023 11:30:57 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/sky2co/public_html/wp-admin/includes/upgrade.php on line 17
+[14-Jan-2023 11:30:57 UTC] PHP Warning:  require_once(ABSPATHwp-admin/includes/admin.php): failed to open stream: No such file or directory in /home/sky2co/public_html/wp-admin/includes/upgrade.php on line 17
+[14-Jan-2023 11:30:57 UTC] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHwp-admin/includes/admin.php' (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/sky2co/public_html/wp-admin/includes/upgrade.php on line 17

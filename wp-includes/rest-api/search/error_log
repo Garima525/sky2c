@@ -1,0 +1,48 @@
+[21-Oct-2022 13:36:32 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php on line 17
+[21-Oct-2022 13:36:34 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php on line 17
+[21-Oct-2022 13:36:37 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php on line 17
+[21-Oct-2022 13:45:59 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php on line 17
+[21-Oct-2022 13:46:00 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php on line 17
+[21-Oct-2022 13:46:01 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php on line 17
+[14-Jan-2023 04:42:49 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php on line 17
+[14-Jan-2023 04:43:28 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php on line 17
+[14-Jan-2023 04:44:48 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php on line 17
+[14-Jan-2023 16:48:23 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php on line 17
+[14-Jan-2023 16:48:47 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php on line 17
+[14-Jan-2023 16:49:38 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Search_Handler' not found in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php on line 17

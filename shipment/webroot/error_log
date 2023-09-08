@@ -1,0 +1,31 @@
+[25-Jan-2021 09:02:34 UTC] PHP Fatal error:  Class 'IntlDateFormatter' not found in /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Database/Type/DateTimeType.php on line 269
+[12-May-2021 07:34:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Locale' not found in /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php:245
+Stack trace:
+#0 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(215): Cake\I18n\I18n::defaultLocale()
+#1 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(76): Cake\I18n\I18n::locale()
+#2 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(139): Cake\I18n\I18n::translators()
+#3 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/functions.php(84): Cake\I18n\I18n::translator('cake')
+#4 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(253): __d('cake', 'An Internal Err...')
+#5 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(168): Cake\Error\ExceptionRenderer->_message(Object(Error), 500)
+#6 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(144): Cake\Error\ExceptionRenderer->render()
+#7 /ho in /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php on line 245
+[21-May-2021 11:31:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Locale' not found in /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php:245
+Stack trace:
+#0 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(215): Cake\I18n\I18n::defaultLocale()
+#1 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(76): Cake\I18n\I18n::locale()
+#2 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(139): Cake\I18n\I18n::translators()
+#3 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/functions.php(84): Cake\I18n\I18n::translator('cake')
+#4 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(253): __d('cake', 'An Internal Err...')
+#5 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(168): Cake\Error\ExceptionRenderer->_message(Object(Error), 500)
+#6 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(144): Cake\Error\ExceptionRenderer->render()
+#7 /ho in /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php on line 245
+[04-Jun-2021 20:58:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Locale' not found in /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php:245
+Stack trace:
+#0 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(215): Cake\I18n\I18n::defaultLocale()
+#1 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(76): Cake\I18n\I18n::locale()
+#2 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php(139): Cake\I18n\I18n::translators()
+#3 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/functions.php(84): Cake\I18n\I18n::translator('cake')
+#4 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(253): __d('cake', 'An Internal Err...')
+#5 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(168): Cake\Error\ExceptionRenderer->_message(Object(Error), 500)
+#6 /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(144): Cake\Error\ExceptionRenderer->render()
+#7 /ho in /home/sky2co/public_html/shipment/vendor/cakephp/cakephp/src/I18n/I18n.php on line 245

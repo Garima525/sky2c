@@ -1,0 +1,20 @@
+[20-Oct-2022 00:35:32 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/sky2co/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/SimplePie/Core.php on line 53
+[21-Oct-2022 13:29:50 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/sky2co/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/SimplePie/Core.php on line 53
+[09-Jan-2023 05:16:22 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/sky2co/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/SimplePie/Core.php on line 53
+[13-Jan-2023 22:34:15 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/sky2co/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/SimplePie/Core.php on line 53
+[14-Jan-2023 17:08:42 UTC] PHP Fatal error:  Uncaught Error: Class 'SimplePie' not found in /home/sky2co/public_html/wp-includes/SimplePie/Core.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/SimplePie/Core.php on line 53

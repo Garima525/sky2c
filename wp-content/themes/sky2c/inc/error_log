@@ -1,0 +1,2 @@
+[04-Dec-2018 04:54:16 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home/skytwocc/public_html/wp-content/themes/sky2c/inc/customizer.php on line 56
+[13-Dec-2018 15:27:41 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home/skytwocc/public_html/wp-content/themes/sky2c/inc/template-tags.php on line 164

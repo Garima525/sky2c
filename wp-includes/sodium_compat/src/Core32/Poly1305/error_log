@@ -1,0 +1,4 @@
+[14-Jan-2023 06:05:51 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Core32_Util' not found in /home/sky2co/public_html/wp-includes/sodium_compat/src/Core32/Poly1305/State.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/src/Core32/Poly1305/State.php on line 10

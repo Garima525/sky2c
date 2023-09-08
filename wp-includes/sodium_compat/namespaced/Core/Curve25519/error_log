@@ -1,0 +1,8 @@
+[14-Jan-2023 05:20:09 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Core_Curve25519_Fe' not found in /home/sky2co/public_html/wp-includes/sodium_compat/namespaced/Core/Curve25519/Fe.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/namespaced/Core/Curve25519/Fe.php on line 4
+[14-Jan-2023 05:20:47 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Core_Curve25519_H' not found in /home/sky2co/public_html/wp-includes/sodium_compat/namespaced/Core/Curve25519/H.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/namespaced/Core/Curve25519/H.php on line 4

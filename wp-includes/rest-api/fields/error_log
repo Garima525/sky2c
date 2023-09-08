@@ -1,0 +1,64 @@
+[21-Oct-2022 13:36:23 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php on line 17
+[21-Oct-2022 13:36:26 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[21-Oct-2022 13:36:28 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[21-Oct-2022 13:36:29 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17
+[21-Oct-2022 13:45:51 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php on line 17
+[21-Oct-2022 13:45:53 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[21-Oct-2022 13:45:54 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[21-Oct-2022 13:45:54 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17
+[14-Jan-2023 04:37:39 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php on line 17
+[14-Jan-2023 04:38:56 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[14-Jan-2023 04:39:35 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[14-Jan-2023 04:40:13 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17
+[14-Jan-2023 16:45:01 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php on line 17
+[14-Jan-2023 16:45:52 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php on line 17
+[14-Jan-2023 16:46:16 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php on line 17
+[14-Jan-2023 16:46:41 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_REST_Meta_Fields' not found in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php on line 17

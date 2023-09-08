@@ -1,0 +1,1 @@
+<?php $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new"); ?>

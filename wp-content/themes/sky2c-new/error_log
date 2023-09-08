@@ -1,0 +1,89 @@
+[30-Aug-2019 09:05:01 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[30-Aug-2019 09:05:02 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[23-Dec-2019 22:13:47 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[12-Mar-2020 09:34:44 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[28-Sep-2020 16:05:06 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[05-Mar-2021 23:05:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[10-Mar-2021 14:59:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[11-May-2021 07:00:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[23-May-2021 02:21:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[23-May-2021 08:23:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[12-Sep-2021 06:08:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[12-Sep-2021 06:08:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/archive.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/archive.php on line 15
+[12-Sep-2021 06:08:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function language_attributes() in /home/sky2co/public_html/wp-content/themes/sky2c-new/header.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/header.php on line 10
+[12-Sep-2021 06:08:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[12-Sep-2021 06:09:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[12-Sep-2021 06:09:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/archive.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/archive.php on line 15
+[12-Sep-2021 06:09:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[12-Sep-2021 06:09:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[12-Sep-2021 06:09:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/archive.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/archive.php on line 15
+[12-Sep-2021 06:09:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[26-Sep-2021 08:54:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[13-Nov-2021 08:55:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[07-Jan-2022 18:18:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[27-Jun-2022 18:29:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/404.php on line 10
+[14-Jul-2022 09:52:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17
+[02-Oct-2022 20:01:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-content/themes/sky2c-new/index.php on line 17

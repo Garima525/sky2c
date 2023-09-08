@@ -1,0 +1,32 @@
+[16-Jul-2022 01:38:45 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6
+[16-Jul-2022 01:38:46 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6
+[16-Jul-2022 01:38:46 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6
+[16-Jul-2022 01:38:47 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6
+[16-Jul-2022 01:38:47 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6
+[16-Jul-2022 01:38:48 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6
+[21-Oct-2022 13:37:12 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6
+[14-Jan-2023 05:09:03 UTC] PHP Fatal error:  Uncaught Error: Class 'ParagonIE_Sodium_Compat' not found in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/sodium_compat/lib/ristretto255.php on line 6

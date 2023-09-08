@@ -1,0 +1,51 @@
+.contact-column {position: relative;min-height:80px;}
+#site-navigation-wrap{top:50%; right: 0px; margin-top: -10px; }
+#site-navigation-wrap{}
+#site-navigation .dropdown-menu > li{line-height:normal;height:auto;color:#fff;margin:0px;margin-left: 2px;}
+#site-navigation .dropdown-menu a{color:#fff;font-size:1rem;padding: 2px; margin:0px 8px; }
+#site-navigation .dropdown-menu a:hover{color:#fff;}
+#site-navigation .dropdown-menu > li > a:hover,
+#site-navigation .dropdown-menu > li.sfHover > a,
+#site-navigation .dropdown-menu > .current-menu-item > a,
+#site-navigation .dropdown-menu > .current-menu-item > a:hover{color:#fff; border-bottom:2px solid #009fc5;}
+#site-navigation .dropdown-menu > .active > a {position:relative; color:#fff; border-bottom:2px solid #009fc5;}
+#site-navigation .dropdown-menu > .active > a:after { content: ""; position:absolute; bottom:0; margin-bottom: -30px; left: 50%; margin-left: -10px; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #009fc5; }
+/*.sf-menu ul{width:250px;}*/
+#site-navigation .sf-menu ul{color:#fff;background:#009fc5;font-size: 1rem;}
+#site-navigation .sf-menu ul li{white-space: normal;margin-left: 0px;}
+#site-navigation .sf-menu ul li:hover{background: #eea01b;}
+#site-navigation .sf-menu ul li a{color: #fff;}
+#site-navigation .sf-menu li:nth-child(6) ul {left:auto; right:0px;}
+#site-navigation .sf-menu li:nth-child(7) ul {left:auto; right:0px;}
+.top-social-links{float: right;}
+#top-contact{float:right;}
+#top-contact{margin: 0px; padding: 0px;}
+#top-contact ul{text-align: right;margin: 0px;margin-right: 10px;}
+#top-contact ul li span{display: none;}
+
+.dropdown-menu-block { background:#009fc5; padding: 20px; }
+.dropdown-menu-content ul { padding-bottom: 30px; padding-top:30px; border-bottom: 1px solid rgba(255, 255, 255, 0.25);  }
+.dropdown-menu-content ul:first-child { padding-top:0px; }
+.dropdown-menu-content ul:last-child { padding-bottom: 0px; border-bottom: 0px solid #ffffff;  }
+.dropdown-menu-content ul li { list-style:none; color: #ffffff; font-weight: 300; margin: 10px 0px; }
+.dropdown-menu-content ul li a { color: #ffffff; font-weight: 300; }
+.dropdown-menu-content ul li strong a { color: #ffffff; text-transform: uppercase; font-weight: 600; text-decoration: underline; }
+
+.services-menu-content { display:none; }
+.personal-cargo-menu-content { display:none; }
+.commercial-cargo-menu-content { display:none; }
+.mega-projects-menu-content { display:none; }
+.useful-links-menu-content { display:none; }
+.contact-us-menu-content { display:none; }
+
+.services-menu-content.active { display:block; }
+.personal-cargo-menu-content.active { display:block; }
+.commercial-cargo-menu-content.active { display:block; }
+.mega-projects-menu-content.active { display:block; }
+.useful-links-menu-content.active { display:block; }
+.contact-us-menu-content.active { display:block; }
+
+@media only screen and (max-width:767px){
+#top-contact{float:left;margin-top:10px;}
+.mob-menu-toggle-btn{right:0px;}
+}

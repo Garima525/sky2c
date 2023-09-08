@@ -1,0 +1,28 @@
+.isotope-item{z-index:2;}
+.isotope-hidden.isotope-item{pointer-events:none;z-index:1;}
+.isotope,
+.isotope .isotope-item{-webkit-transition-duration:0.8s;-moz-transition-duration:0.8s;-o-transition-duration:0.8s;transition-duration:0.8s;}
+.isotope{-webkit-transition-property:height, width;-moz-transition-property:height, width;-o-transition-property:height, width;transition-property:height, width;}
+.isotope .isotope-item{-webkit-transition-property:-webkit-transform, opacity;-moz-transition-property:-moz-transform, opacity;-o-transition-property:top, left, opacity;transition-property:transform, opacity;}
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition{-webkit-transition-duration:0s;-moz-transition-duration:0s;-o-transition-duration:0s;transition-duration:0s;}
+.isotope.infinite-scrolling{-webkit-transition:none;-moz-transition:none;-o-transition:none;transition:none;}
+.iosSlider .slider .item img, .item .showtext{-webkit-transition:all 0.65s ease-in-out;-moz-transition:all 0.65s ease-in-out;-o-transition:all 0.65s ease-in-out;-ms-transition:all 0.65s ease-in-out;transition:all 0.65s ease-in-out;}
+#portitems2 h3, .item3 h3, .item4 h3, .item3 h3 a, .item4 h3 a, .homeRacent h3, .advertise .bx-prev, .advertise .bx-next, .related h4 a,
+.blogpostcategory h2 a, .content ol.commentlist li .comment-author .fn a, .content ol.commentlist li .reply a,.widgett a, .widget_categories a , .widget_archive a, .widget_pages a, .widget_links a, .widget_recent_entries a, .widget_recent_comments a, .widget_meta a, .widget_nav_menu a, .widget_rss a,
+.rsswidget, .gototop, .widget_tag_cloud a, .footer_widget .widget_links ul li a, .footer_widget .widget_meta ul li a, #nslider .nivo-controlNav img ,#nslidert .nivo-controlNav img,
+.facebooklink, .twitterlink, .dribble, .vimeo, .emaillink, .custom_images img, .image-gallery .over, .portcategories a, .homeBox .one_third{-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
+#portitems2 h3 a, #portitems2 .image, .posttext img, .homeBox .one_fourth h2, .homeBox .one_fourth .boxDescription, .homeBox .one_fourth .boxImage, .homeBox .one_fourth .boxImage img, .homeRacent h3 a,
+#respond #commentform textarea, #respond #commentform input, #commentform #respond #commentform textarea, #commentform #respond #commentform input, #commentform #respond #commentform input#submit, #respond #commentform input#submit,
+#contactform .commentfieldarea textarea, #contactform .commentfield input , #contactform .contactbutton .contact-button, .widgett .imgholder img, h2.trigger, .buttonblue, .buttonred, .buttonblack,
+.buttonyellow, .buttongreen, .buttonpink, .buttonorange, .buttonyellow_modern, .buttonred_modern, .buttondark_modern, .buttonblue_modern, .buttonpink_modern, .buttonorange_modern,
+.buttongreen_modern, #contactform .contactbutton .contact-button, .widget_login .submitbutton, .nextbutton, .prevbutton, .related .one_third .image img, .cartTopDetails,
+a.button, button.button, input.button, #respond input#submit, #content input.button, .imagesSPAll .navigationSP, .productIframe.withsidebar, .productIframe.full{-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;}
+#portitems2 .overdefult, #portitems2 .overLowerDefault, #portitems2 .overLowerDefaultBorder, .item3 .overdefult, .item4 .overdefult, .item3 .overLowerDefault, .item4 .overLowerDefault, .item3 .overLowerDefaultBorder, .item4 .overLowerDefaultBorder,
+.homeRacent .overdefult, .homeRacent .overLowerDefault, .homeRacent .overLowerDefaultBorder, .advertise img, .related .one_fourth .image img, .homeremove .catlink .sortingword, .projectdetails .blogsingleimage img,
+.home .bx-prev, .home .bx-next, .blogpostcategory .comment-inside, .blogpostcategory .date-inside, .projectdescription .portnavigation .portnext, .projectdescription .portnavigation .portprev, .homeRacent .one_third,
+.homeRacent.post .recentimage, .homeRacent.post .recentimage img,.widget_search form div input, .product_list_widget li img{-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;}
+a, a:active, a:visited, .menu > li a strong, .leftContentSP .thumbnails img{-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;-ms-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
+.textSlide img, .widget_price_filter_custom .ui-slider .ui-slider-handle{-webkit-transition:opacity 0.25s ease-in-out;-moz-transition:opacity 0.25s ease-in-out;-o-transition:opacity 0.25s ease-in-out;-ms-transition:opacity 0.25s ease-in-out;transition:opacity 0.25s ease-in-out;}
+.nextbutton.port, .prevbutton.port, p.stars span a{-webkit-transition:all 0s ease-in-out;-moz-transition:all 0s ease-in-out;-o-transition:all 0s ease-in-out;-ms-transition:all 0s ease-in-out;transition:all 0s ease-in-out;}

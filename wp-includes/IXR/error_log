@@ -1,0 +1,40 @@
+[20-Oct-2022 00:17:28 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[20-Oct-2022 00:18:15 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Server' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[21-Oct-2022 13:27:33 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[21-Oct-2022 13:27:40 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Server' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[09-Jan-2023 03:51:20 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[09-Jan-2023 03:53:17 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Server' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[13-Jan-2023 21:15:57 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[13-Jan-2023 21:17:50 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Server' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9
+[14-Jan-2023 09:26:47 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Client' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-clientmulticall.php on line 8
+[14-Jan-2023 09:28:51 UTC] PHP Fatal error:  Uncaught Error: Class 'IXR_Server' not found in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/IXR/class-IXR-introspectionserver.php on line 9

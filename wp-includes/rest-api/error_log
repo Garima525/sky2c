@@ -1,0 +1,16 @@
+[20-Oct-2022 01:23:09 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_HTTP_Response' not found in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
+[21-Oct-2022 13:35:18 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_HTTP_Response' not found in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
+[14-Jan-2023 04:10:16 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_HTTP_Response' not found in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17
+[14-Jan-2023 16:27:11 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_HTTP_Response' not found in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sky2co/public_html/wp-includes/rest-api/class-wp-rest-response.php on line 17

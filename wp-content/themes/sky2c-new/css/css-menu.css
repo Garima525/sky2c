@@ -1,0 +1,74 @@
+.cssmain{width: 100%; background:transparent;position: relative;}
+.cssmainnav{padding: 0px;float: right;margin-bottom: 0px;}
+li{list-style: none;}
+li a{text-decoration: none;}
+.services-menu-content { display:none; }
+.personal-cargo-menu-content { display:none; }
+.commercial-cargo-menu-content { display:none; }
+.mega-projects-menu-content { display:none; }
+.useful-links-menu-content { display:none; }
+.contact-us-menu-content { display:none; }
+.contact-column{height: 80px;}
+#site-navigation-wrap{top:50%;margin-top:0px;left:15px; right:15px;}
+#site-navigation{margin-right: 17.5%;}
+@media (min-width:768px) {
+.logo-column{position: absolute;left:15px;z-index: 100;}
+.search-column{position: absolute; right:15px;top:50%;}
+#header .container{position: relative;}
+.cssdropdown{position: absolute; left:0px; transition:all ease-out .35s;-moz-transition:all ease-out .35s;-webkit-transition:all ease-out .35s;z-index: 100;-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.5);box-shadow: 2px 2px 5px rgba(0,0,0,0.5);background-color: #fff;padding: 0px;display:none;transition:all ease-in .35s;-moz-transition:all ease-in .35s;-webkit-transition:all ease-in .35s;}
+.cssdropdown.right-aligned{left: auto; right: 0px;}
+.cssmainnav li{display: inline-block;padding:0px;}
+.cssmainnav li.hassubs{}
+.cssmainnav li:first-child{border: none;}
+.cssmainnav li a{ display: block;padding:0px 10px;color:rgba(0,0,0,0.7);font-size: 1rem;}
+.cssmainnav li a span{display: inline-block; }
+.cssmainnav li:hover{transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;}
+.cssmainnav li:hover a{transition: ease-in .35s;-moz-transition: ease-in .35s;-webkit-transition: ease-in .35s;text-decoration: none;}
+.cssmainnav li:hover a span{}
+.cssmainnav > li > a{line-height: 40px;color: #fff;position: relative;}
+.cssmainnav > li > a:before{width: 0; height: 0; border-left:8px solid transparent; border-right: 8px solid transparent; border-bottom: 10px solid transparent; content: "";position: absolute; left:50%; margin-left:-5px;bottom:0px;}
+.cssmainnav > li:hover > a:before{border-bottom: 10px solid #009fc5;}
+.cssmainnav .cssdropdown ul li{display: block;text-align: left;}
+.subs {position: relative;top: 0px;width:100%;border-bottom: 1px solid #efefef !important;}
+.subs:last-child{border: none !important;}
+.hassubs:hover .cssdropdown,.hassubs .hassubs:hover .cssdropdown{display:block;transition:all ease-in .35s;-moz-transition:all ease-in .35s;-webkit-transition:all ease-in .35s;}
+.cssmainnav li:hover ul a,.cssmainnav li:hover ul li ul li a{}
+.cssmainnav li ul li:hover,.cssmainnav li ul li ul li:hover{transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
+.cssmainnav li ul li:hover a,.cssmainnav li ul li ul li:hover a{transition: ease-in-out .35s;-moz-transition: ease-in-out .35s;-webkit-transition: ease-in-out .35s;}
+.hassubs .hassubs .cssdropdown{position: absolute;width:300px;left:100%;top: 0px;opacity: 0;visibility: hidden;transition: ease-out .35s;-moz-transition: ease-out .35s;-webkit-transition: ease-out .35s;}
+.hassubs .hassubs .cssdropdown .subs{position: relative;width:100%;top: 0px;}
+.dropdown-menu-block {background:#009fc5; padding: 20px 0px;background: rgba(0,159,197,0.9);}
+.dropdown-menu-content ul {padding-bottom: 30px; padding-top:30px; border-bottom: 1px solid rgba(255, 255, 255, 0.25);}
+.dropdown-menu-content ul:first-child { padding-top:0px; }
+.dropdown-menu-content ul:last-child { padding-bottom: 0px; border-bottom: 0px solid #ffffff;  }
+.dropdown-menu-content ul li { list-style:none; color: #ffffff; font-weight: 300; margin: 10px 0px; }
+.dropdown-menu-content ul li a { color: #ffffff; font-weight: 300; }
+.dropdown-menu-content ul li a:hover, .dropdown-menu-content ul li a:focus{color: rgba(0,0,0,0.8);}
+.dropdown-menu-content ul li strong a { color: #ffffff; text-transform: uppercase; font-weight: 600; text-decoration: underline !important; }
+.dropdown-menu-content .textwidget ul li:last-child{padding: 0px 10px;}
+}
+.mobile-menu-toggle{display: none;position: absolute; top:10px; left:0px;z-index: 100;cursor: pointer;}
+.mobile-menu-toggle .fa{color: #fff;}
+#css-main-wrap.menu-active{display: block;}
+@media (max-width:767px) {
+.mobile-menu-toggle{display: block;}
+.user-section{display: none;position: relative;}
+.cssmain-wrapper{position: absolute;background: #fff;z-index:999;top:0px;margin-top: 0px;width:100%;left:0px;}
+.cssmainnav{padding: 0px;float:none;margin-bottom: 0px;width:100%;background: #fff;}
+.cssmain{padding:15px;}
+.cssmainnav li{display: block;text-align: left;float:none;}
+.cssmainnav > li > a{color:rgba(0,0,0,0.7);display: block; margin-right:40px;line-height: 40px;}
+.cssmainnav > li > a > .fa{color: inherit;}
+.cssmainnav > li > a:hover, .cssmainnav > li > a:focus{text-decoration: none;color:#6aaf31;}
+.cssdropdown{display: none;padding:0px; }
+.cssdropdown li{padding: 0px 0px;border-bottom: 1px solid rgba(255,255,255,0.5);}
+.cssdropdown li a{background: #bddaa5;display: block; line-height: 40px;color: #000;padding-left: 10px; padding-right: 10px;}
+.cssdropdown li a:hover, .cssdropdown li a:focus{text-decoration: none;}
+#menuopen{}
+#menuclose{display:none;}
+li.hassubs{position: relative;}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+#site-navigation{margin-right:0px;}
+.cssmainnav > li > a{padding: 0px 7px;}
+}

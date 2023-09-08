@@ -1,0 +1,997 @@
+	<?php
+	/**
+	 * Template Name: leadership
+	 *
+	 * @package WordPress
+	 * @subpackage Elegant WPExplorer Theme
+	 * @since Elegant 1.0
+	 */
+	get_header();
+	 ?>
+	
+	<div id="primary" class="content-area innerpages-content clr">
+	<div id="content" class="site-content innerpages" role="main">
+	<?php while ( have_posts() ) : the_post(); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="">
+	<?php //the_content(); ?>
+	
+	<section class="inner-page-section leadership-section leadership-section1 leadership-section-blue">
+	<div class="container">
+	<h2>Executive leaders</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tarun Tandon</h3>
+	<p>CEO</p>
+	<ul>
+	<li>tarun@sky2c.com</li><li>Ext.#303</li><li>sky2cusa</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Anu Tandon</h3>
+	<p>HR + Outbound HHG Specialist</p>
+	<ul>
+	<li>anu@sky2c.com</li><li>Ext.#304</li><li>tandonanu</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	
+	<section class="inner-page-section leadership-section leadership-section2">
+	<div class="container">
+	<h2>Director &amp; Managers</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Anil Tandon</h3>
+	<p>General Manager / Imports Customs Clearance Ops &amp; Freight Cashier</p>
+	<ul>
+	<li>anil@sky2c.com</li><li>Ext.#306</li><li>anilt55</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Sudhir Aggarwal</h3>
+	<p>Accounts Payable / Receivable</p>
+	<ul>
+	<li>accounts@sky2c.com</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">live:srnco_1</li><li class="no-icon d-none">3rd party</li><li class="no-icon d-none">IST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>Director Of Operations</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>monika_722</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Serge Salomon</h3>
+	<p>General Manager/Dallas Station | AIR EXPORTS</p>
+	<ul>
+	<li>serge@sky2c.com</li><li>serge.tx</li><li class="no-icon">&nbsp;</li><li class="no-icon">&nbsp;</li><li>TX</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tara Lavea</h3>
+	<p>Air Export Manager</p>
+	<ul>
+	<li>tara.lavea@sky2c.com</li><li>Ext.#313</li><li>tara.lavea</li><li>Dallas</li><li>CST</li><li>TX</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Arlynne Policarpio</h3>
+	<p>Ocean Export Manager</p>
+	<ul>
+	<li>arlynne@sky2.com</li><li>arlynne.sky2c</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Khan</h3>
+	<p>Operations Manager North India</p>
+	<ul>
+	<li>khan@sky2c.com</li><li class="no-icon">&nbsp;</li><li>India</li><li>IST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section3 leadership-section-grey">
+	<div class="container">
+	<h2>Pricing</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Rick Yadav</h3>
+	<p>Senior Ocean Export Pricing Manager</p>
+	<ul>
+	<li>pricing@sky2.com</li><li>saurabh.yadav78</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Ram Kumar</h3>
+	<p>AR,FCL, RORO, BB & Projects (ALL OCEAN)</p>
+	<ul>
+	<li>pricing@sky2.com</li><li>Ext.#327</li><li class="no-icon d-none">ramlal.verma1</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Vijay Balajiga</h3>
+	<p>Manager - Air Pricing & Agent Operation</p>
+	<ul>
+	<li>Vijay@sky2c.com</li><li>Ext.#377</li><li class="no-icon d-none">9953032393</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Samuel Avinash</h3>
+	<p>Air Export + Agent Pricing (AIR ONLY)</p>
+	<ul>
+	<li>sam@sky2c.com</li><li>avinash.samuel74</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Gautam Arora</h3>
+	<p>DDU &amp; DDP FOR EX USA SHIPMENTS + Pricing for shipments elsewhere in World besides US.</p>
+	<ul>
+	<li>gautam@sky2c.com</li><li class="no-icon d-none">9650796660</li><li class="no-icon d-none">gautam22114</li><li class="no-icon d-none">India</li><li class="no-icon d-none">GMT</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Anil Tandon</h3>
+	<p>General Manager + Imports Customs Clearance Ops</p>
+	<ul>
+	<li>anil@sky2c.com</li><li>Ext.#306</li><li>anilt55</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>Domestic LTL, FTL & Projects</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>live:monika_722</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tina Semprevio</h3>
+	<p>Warehousing & Suppy Chain</p>
+	<ul>
+	<li>tina@sky2c.com</li><li>Ext.#325</li><li>tina.sky2c</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Daniel Rai</h3>
+	<p>Pricing and coordination</p>
+	<ul>
+	<li>daniel@sky2c.com</li><li>Daniel.rai</li><li>India</li><li>IST</li><li>India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Sunil Jaswal</h3>
+	<p>Senior Pricing Analyst / Air &amp; Ocean</p>
+	<ul>
+	<li>sunil@sky2c.com</li><li class="no-icon">&nbsp;</li><li>India</li><li>IST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	</ul>
+	</div>
+	</div>
+	</section>
+	
+	<section class="inner-page-section leadership-section leadership-section4 ">
+	<div class="container">
+	<h2>IT Experts</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Rohit Menon</h3>
+	<p>Web, CRM & Other IT Operations</p>
+	<ul>
+	<li>rohit@sky2c.com</li><li>5109355603</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Harish Sharma</h3>
+	<p>Phone, Email, Networking</p>
+	<ul>
+	<li>harish@globusmicro.com</li><li class="no-icon d-none">510 -427-6740</li><li>globusmicro</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Pawan Bangar</h3>
+	<p>Google AdWords, Web Maintenance</p>
+	<ul>
+	<li>pawan@birbals.com</li><li class="no-icon d-none">510-449-9049</li><li class="no-icon d-none">&nbsp;</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Stephen George</h3>
+	<p>Software Engineer</p>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Ellen David</h3>
+	<p>Software Engineer</p>
+	</div>
+	</li>-->
+	</ul>
+	</div>
+	</div>
+	</section>
+	
+	<!--<section class="inner-page-section leadership-section leadership-section5 leadership-section-grey ">
+	<div class="container">
+	<h2>Claims</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Rohit Menon</h3>
+	<p>All Type of Claims</p>
+	<ul>
+	<li>rohit@sky2c.com</li><li>5109355603</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>-->
+	<!--<section class="inner-page-section leadership-section leadership-section6 leadership-section-grey">
+	<div class="container">
+	<h2>Legal</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Snehal Patil</h3>
+	<p>Legal</p>
+	<ul>
+	<li>spatil@induscounsel.com</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">&nbsp;</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>-->
+	<section class="inner-page-section leadership-section leadership-section7 leadership-section-grey">
+	<div class="container">
+	<h2>Air Export Opt.</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Johanna Martinez</h3>
+	<p>Air Export | Domestic Sales</p>
+	<ul>
+	<li>johanna@sky2c.com</li><li>live:johanna_3702</li><li>New York, NY</li><li>EST</li><li>NY</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tara Lavea</h3>
+	<p>Air Export Manager</p>
+	<ul>
+	<li>tara.lavea@sky2c.com</li><li>Ext.#313</li><li>tara.lavea</li><li>Dallas</li><li>CST</li><li>TX</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Nihal  chaudhary</h3>
+	<p>Air Export</p>
+	<ul>
+	<li>airexp@sky2c.com</li><li>Ext.#339</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">India</li><li class="no-icon d-none">EST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Umesh Kumar</h3>
+	<p>Night Ops. / Air Tracking</p>
+	<ul>
+	<li>Airexp@sky2c.com</li><li class="no-icon d-none">9650796670</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">India</li><li class="no-icon d-none">IST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Chris Durai</h3>
+	<p>Air Export</p>
+	<ul>
+	<li>chris@sky2c.com</li><li>prakashdurai1</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Mohammed Haq</h3>
+	<p>Air Export</p>
+	<ul>
+	<li>m.haq@sky2c.com</li><li>Ext.#334</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">India</li><li class="no-icon d-none">EST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Navneet (Neil)</h3>
+	<p>Air Export</p>
+	<ul>
+	<li>Airexp@sky2c.com</li><li>Ext.#374</li><li class="no-icon d-none">NAVNEET BHARDWAJ</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Faizan Khan</h3>
+	<p>Air Export</p>
+	<ul>
+	<li>agentops@sky2c.com</li><li>Ext.#388</li><li class="no-icon d-none">Faizan khan</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Wasim Khan</h3>
+	<p>Air Export</p>
+	<ul>
+	<li>Airexp@sky2c.com</li><li>Ext.#379</li><li class="no-icon d-none">8285862124</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Babendra(Brent)</h3>
+	<p></p>
+	<ul>
+	<li>Airexp@sky2c.com</li><li>Ext.#387</li><li class="no-icon d-none">Babendra.r@gmail.com</li><li class="no-icon d-none">India</li><li class="no-icon d-none">EST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Kishan Haldar</h3>
+	<p>Air Tracking</p>
+	<ul>
+	<li>Airexp@sky2c.com</li><li class="no-icon d-none">9650494443</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">India</li><li class="no-icon d-none">EST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+    <!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Rakesh Sharma</h3>
+	<p>Air Export</p>
+	<ul>
+	<li>rakesh@sky2c.com</li><li class="no-icon">&nbsp;</li><li>Fremont, CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Sindhu Manoharan</h3>
+	<p>Air Export Sales and Operation</p>
+	<ul>
+	<li>sindhu@sky2c.com</li><li>sindhuuk</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section8">
+	<div class="container">
+	<h2>Ocean Export Opt.</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Alyssa Agulan</h3>
+	<p>Agent routed &amp; Copy Machines</p>
+	<ul>
+	<li>alyssa@sky2c.com</li><li>alyssaagulan1</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Parv</h3>
+	<p>Agent routed & FAK</p>
+	<ul>
+	<li>Parv@sky2c.com</li><li>Ext.#311</li><li>live:.cid.af1f3e8396a538e0</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Saurabh Rohilla (John)</h3>
+	<p>Country Manager /Ops. Asst. Operations</p>
+	<ul>
+	<li>s.rohilla@sky2c.com</li><li>Ext.#322</li><li class="no-icon d-none">saurabh.rohilla2</li><li class="no-icon d-none">India</li><li class="no-icon d-none">IST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Nitin Indoriya</h3>
+	<p>HHG and Agent Routing</p>
+	<ul>
+	<li>nitin@sky2c.com</li><li>Ext.#329</li><li class="no-icon d-none">Nitin Indoriya</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Aman Yadav</h3>
+	<p>Computer and parts</p>
+	<ul>
+	<li>Aman@sky2c.com</li><li>Ext.#380, 319</li><li class="no-icon d-none">live:.cid.e4850820df0cc7fc</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Yuvraj Tyagi ( Peter)</h3>
+	<p>HHG and FAK</p>
+	<ul>
+	<li>Peter@sky2c.com</li><li>Ext.#383</li><li class="no-icon d-none">8851065582</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Rakesh Sharma</h3>
+	<p>India HHG Operations/HBL Approvals FOR UNIRELO ONLY</p>
+	<ul>
+	<li>operations@unirelo.com</li><li>Ext.#310</li><li>operations@unirelo.com</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Chitresh Balagiga ( Chrish)</h3>
+	<p>Computer and parts</p>
+	<ul>
+	<li>chrish@sky2c.com</li><li>Ext.#381</li><li class="no-icon d-none">Chitresh Balajiga</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Gaurav Verma ( Nick)</h3>
+	<p>Construction Equp, & AUTO'S</p>
+	<ul>
+	<li>nick@sky2c.com</li><li>Ext.#301</li><li class="no-icon d-none">iamgv4u</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Imran Ansari</h3>
+	<p>Construction Equp, & AUTO'S</p>
+	<ul>
+	<li>imran@sky2c.com</li><li>Ext.#384</li><li class="no-icon d-none">aimran517</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>LCL Export</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>live:monika_722</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Victor Jha</h3>
+	<p>HHG and FAK</p>
+	<ul>
+	<li>victor@sky2c.com</li><li>vikas_sky2c</li><li>India</li><li>IST</li><li>India</li>
+	</ul>
+	</div>
+	</li>
+	
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Mark Shukla</h3>
+	<p>Computer Parts &amp; FAK</p>
+	<ul>
+	<li>mark@sky2c.com</li><li>im_shukla</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Nick Keshari</h3>
+	<p>Construction Equp, &amp; AUTO'S</p>
+	<ul>
+	<li>nick@sky2c.com</li><li>gaurav.keshari</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Adam Soni</h3>
+	<p>Construction Equp, &amp; AUTO'S</p>
+	<ul>
+	<li>adam@sky2c.com</li><li class="no-icon">&nbsp;</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Raquel Barrientos</h3>
+	<p>Customs validation specialist, Ocean export documentation</p>
+	<ul>
+	<li>raq@sky2c.com</li><li>Ext.#308</li><li>raquel.barrientos14</li><li>Fremont, CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section9 leadership-section-grey">
+	<div class="container">
+	<h2>Sales</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Harsh Bhatnagar (Steve)</h3>
+	<p>Sales Manager</p>
+	<ul>
+	<li>steve@sky2c.com</li><li>Ext.#316, 323</li><li class="no-icon d-none">steve.hbi</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Usha Kumar</h3>
+	<p>Sales to India HHG/Overseas</p>
+	<ul>
+	<li>usha@unirelo.com</li><li class="no-icon d-none">510-860-4411</li><li>usha@unirelo.com</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Jasmeet Singh (Jas)</h3>
+	<p>Inside Sales</p>
+	<ul>
+	<li>sales2@sky2c.com</li><li>Ext.#315, 375</li><li class="no-icon d-none">8287430546</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Lisa Newkirk</h3>
+	<p>Sales Manager</p>
+	<ul>
+	<li>lisa@sky2c.com</li><li>Ext.#366</li><li>lisaysip</li><li>Fremont, CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Khalid</h3>
+	<p>Inside Sales</p>
+	<ul>
+	<li>sales2@sky2c.com</li><li>Ext.#382, 332</li><li class="no-icon d-none">mohd khalid khan</li><li class="no-icon d-none">India</li><li class="no-icon d-none">PST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Anna RJ</h3>
+	<p>Inside Sales</p>
+	<ul>
+	<li>sales2@sky2c.com</li><li>591e60517fbff27d</li><li>India</li><li>PST</li><li>India</li>
+	</ul>
+	</div>
+	</li>-->
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Amol Gade</h3>
+	<p>Senior Customer Service Mumbai</p>
+	<ul>
+	<li>bom@sky2c.com</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">India</li><li class="no-icon d-none">IST</li><li class="no-icon d-none">India</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section10 ">
+	<div class="container">
+	<h2>HR</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Anu Tandon</h3>
+	<p>HR + Outbound HHG Specialist</p>
+	<ul>
+	<li>anu@sky2c.com</li><li>Ext.#304</li><li>tandonanu</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Yasmine Kutub</h3>
+	<p>HR & Compliance Manager</p>
+	<ul>
+	<li>yasmine@sky2c.com</li><li class="no-icon d-none">&nbsp;</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section11 leadership-section-grey">
+	<div class="container">
+	<h2>Warehouse</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tina Semprevio</h3>
+	<p>Warehouse Manager</p>
+	<ul>
+	<li>tina@sky2c.com</li><li>Ext.#325</li><li>tina.sky2c</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Lovelace Rufus</h3>
+	<p>Relocation Coordinator</p>
+	<ul>
+	<li>Lovelace@sky2c.com</li><li>Ext.#325</li><li class="no-icon d-none">&nbsp;</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Simmi Walia</h3>
+	<p>Fulfillment + Admin</p>
+	<ul>
+	<li>simmi@sky2c.com</li><li>Ext.#307</li><li class="no-icon d-none">&nbsp;</li><li>Union City,CA</li><li>CA</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Melanie Walker</h3>
+	<p>Warehouse &amp; UniRelo Shipments</p>
+	<ul>
+	<li>dfw@sky2c.com</li><li class="no-icon d-none">&nbsp;</li><li>Dallas, TX</li><li>CST</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">&nbsp;</li>
+	</ul>
+	</div>
+	</li>
+	<!--<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Darius calyua</h3>
+	<p>Warehouse and Driver</p>
+	<ul>
+	<li>darius@sky2c.com</li><li class="no-icon">&nbsp;</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Jose</h3>
+	<p>Unirelo Moving and Warehouse</p>
+	<ul>
+	<li class="no-icon"></li><li class="no-icon">&nbsp;</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Mike</h3>
+	<p>Unirelo Moving and Warehouse</p>
+	<ul>
+	<li class="no-icon"></li><li class="no-icon">&nbsp;</li><li>Fremont CA</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>-->
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section12 ">
+	<div class="container">
+	<h2>Troubleshoot Team (24x7) - Ocean</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>Director of Operations</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>monika_722</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section12 leadership-section-grey">
+	<div class="container">
+	<h2>Troubleshoot Team (24x7) - Air</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tara Lavea</h3>
+	<p>Air Export Manager</p>
+	<ul>
+	<li>tara.lavea@sky2c.com</li><li>Ext.#313</li><li>tara.lavea</li><li>DALLAS</li><li>CST</li><li>TX</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>Director of Operations</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>monika_722</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section12">
+	<div class="container">
+	<h2>Troubleshoot Team (24x7) - Imports</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Anil Tandon</h3>
+	<p>Imports Customs Clearance</p>
+	<ul>
+	<li>anil@sky2c.com</li><li>Ext.#306</li><li>anilt55</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>Director of Operations</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>monika_722</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section12 leadership-section-grey">
+	<div class="container">
+	<h2>Troubleshoot Team (24x7) - Warehouse</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tina Semprevio</h3>
+	<p>Warehousing & Suppy Chain</p>
+	<ul>
+	<li>tina@sky2c.com</li><li>Ext.#325</li><li>tina.sky2c</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>Director of Operations</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>monika_722</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section12">
+	<div class="container">
+	<h2>Troubleshoot Team (24x7) - Domestic</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Monika Bangar</h3>
+	<p>Domestic LTL, FTL & Projects</p>
+	<ul>
+	<li>monika@sky2c.com</li><li>Ext.#362</li><li>live:monika_722</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section12 leadership-section-grey">
+	<div class="container">
+	<h2>Troubleshoot Team (24x7) - Reception</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Marjorie Medina</h3>
+	<p>Reception</p>
+	<ul>
+	<li>marjorie@sky2c.com</li><li>Ext.#300</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">&nbsp;</li><li class="no-icon d-none">&nbsp;</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	<section class="inner-page-section leadership-section leadership-section12">
+	<div class="container">
+	<h2>Troubleshoot Team (24x7) - BACK-UP</h2>
+	<div class="staff-item-wrapper staff-item-wrapper1">
+	<ul class="staff-item-list">
+	<li>
+	<div class="item-wrapper">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/leaders/avatar.png" alt="" class="img-responsive" />
+	<h3>Tarun Tandon</h3>
+	<p>CEO</p>
+	<ul>
+	<li>tarun@sky2c.com</li><li>Ext.#303</li><li>sky2cusa</li><li>Fremont</li><li>PST</li><li>CA</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</section>
+	</div><!-- .entry-content -->
+	</article><!-- #post -->
+	<?php //comments_template(); ?>
+	<?php endwhile; ?>
+	</div><!-- #content -->
+	</div><!-- #primary -->
+	
+	<?php get_footer(); ?>
