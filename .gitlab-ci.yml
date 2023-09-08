@@ -4,6 +4,10 @@ stages:
 deploy:
   stage: deploy
   script:
+    - mkdir -p ~/.ssh
+    - touch ~/.ssh/known_hosts
+    - ssh-keyscan -p 2224 15.207.56.8 >> ~/.ssh/known_hosts
+    - chmod 600 ~/.ssh/known_hosts
     - scp -v -i ~/.ssh/id_rsa * root@15.207.56.8:/var/www/html/sky2git/sky2c
   only:
     - main
