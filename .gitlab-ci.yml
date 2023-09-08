@@ -4,6 +4,20 @@ stages:
 deploy:
   stage: deploy
   script:
-    - scp -P 2224 -o UserKnownHostsFile=/root/.ssh/known_hosts -r ./* root@15.207.56.8:/var/www/html/sky2git/sky2c
+    - apt-get update -qy
+    - apt-get install -y openssh-client rsync
+
+    # Set up SSH key
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -p 2224 -H 15.207.56.8 >> ~/.ssh/known_hosts
+
+    # Copy files to remote server
+    - rsync -e "ssh -p 2224" -r --delete-after --exclude=".git" ./ root@15.207.56.8:/var/www/html/sky2git/sky2c
+
+    # SSH into remote server (if needed)
+    # Use this step if you want to execute commands on the remote server after deployment
+    - ssh -p 2224 root@15.207.56.8 
+
   only:
     - main
