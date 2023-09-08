@@ -4,6 +4,6 @@ stages:
 deploy:
   stage: deploy
   script:
-    - scp -P 2224 -o UserKnownHostsFile -r ./* root@15.207.56.8:/var/www/html/sky2git/sky2c
+    - scp -P 2224 -o UserKnownHostsFile=/root/.ssh/known_hosts -r ./* root@15.207.56.8:/var/www/html/sky2git/sky2c
   only:
     - main
