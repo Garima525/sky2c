@@ -22,17 +22,17 @@
 define('FORCE_SSL_ADMIN', true);
 define('RELOCATE', TRUE);
 $_SERVER['HTTPS'] = 'on';
-define('WP_HOME','https://www.sky2c.com');
-define('WP_SITEURL','https://www.sky2c.com');
+//define('WP_HOME','https://www.sky2c.com');
+//define('WP_SITEURL','https://www.sky2c.com');
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'sky2co_new' );
+define( 'DB_NAME', 'sky2cdb' );
 
 /** Database username */
-define( 'DB_USER', 'sky2co_skynew' );
+define( 'DB_USER', 'sky2cdb' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'J*{r4~Y&{(5{' );
+define( 'DB_PASSWORD', '9i2p[qFwN-jcG.[R' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -85,7 +85,7 @@ $table_prefix = 'sy_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 define( 'WP_MEMORY_LIMIT', '256M' );
 
 /* Add any custom values between this line and the "stop editing" line. */
@@ -105,3 +105,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
