@@ -4,6 +4,6 @@ stages:
 deploy:
   stage: deploy
   script:
-    - scp -i ~/.ssh/id_rsa -v -r -P 2224 * root@15.207.56.8:/var/www/html/sky2git/sky2c
+    - scp -i * root@15.207.56.8:/var/www/html/sky2git/sky2c
   only:
     - main
