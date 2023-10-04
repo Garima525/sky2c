@@ -1,6 +1,10 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 RewriteBase /sky2c_newweb/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f

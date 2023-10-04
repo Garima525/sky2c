@@ -172,6 +172,7 @@ function trim (str, charlist) {
 }
 //air order form validation starts here
 function checkAirOrderForm() { 
+	// alert('hi there');
 	var er=0;
 	var foc ='';
 	var shipper_name = jQuery("#shipper_name").val();
@@ -196,7 +197,7 @@ function checkAirOrderForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	/*var receiver_name = jQuery("#receiver_name").val();
 	var receiver_address = jQuery("#receiver_address").val();
@@ -232,8 +233,7 @@ function checkAirOrderForm() {
 	if (IsEmail('receiver_email')==false) { if(er==0) foc = 'receiver_email'; er=1; }*/
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
-	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -389,7 +389,7 @@ function checkFCLForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (fullname('fcl_shipper_name')==false) { if(er==0) foc = 'fcl_shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -413,8 +413,7 @@ function checkFCLForm() {
 	if (IsEmail('consignee_email')==false) { if(er==0) foc = 'consignee_email'; er=1; }
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
-	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -425,6 +424,7 @@ function checkFCLForm() {
 
 //lcl form validation starts here
 function checkLclOrderForm() { 
+	// alert('hi there' );
 	var er=0;
 	var foc ='';
 	var shipper_name = jQuery("#shipper_name").val();
@@ -456,7 +456,7 @@ function checkLclOrderForm() {
 	var receiver_tel_no = jQuery("#receiver_tel_no").val();
 	var receiver_email = jQuery("#receiver_email").val();
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (fullname('shipper_name')==false) { if(er==0) foc = 'shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -485,7 +485,7 @@ function checkLclOrderForm() {
 	if (IsEmail('receiver_email')==false) { if(er==0) foc = 'receiver_email'; er=1; }
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
 	
 	if(er==1) {
@@ -509,7 +509,7 @@ function checkbtnclick() {
 	var CellPhone = jQuery("#CellPhone").val();
 	var Comments = jQuery("#Comments").val();
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (alphanumeric('FromZip')==false) { if(er==0) foc = 'FromZip'; er=1; }	
 	if (alphanumeric('ToZip')==false) { if(er==0) foc = 'ToZip'; er=1; }	
@@ -523,10 +523,7 @@ function checkbtnclick() {
 	if (contactCustomWithCountryCode('CellPhone',10,20)==false) { if(er==0) foc = 'CellPhone'; er=1; }
 	if (selectcon('Comments')==false) { if(er==0) foc = 'Comments'; er=1; }
 	
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
-		
-	//if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -537,30 +534,13 @@ function checkbtnclick() {
 		var data = "ToZip="+ToZip+"&FromZip="+FromZip+"&Fromcountry="+Fromcountry+"&fname="+fname+"&lname="+lname+ "&Tocountry="+Tocountry+"&EmailAddress="+EmailAddress+"&CellPhone="+CellPhone+"&Comments="+Comments+"&qf=1";
 		  jQuery.ajax({
 			type: "POST",
-			url: "https://www.sky2c.com/process_form.php",
+			// url: "https://www.sky2c.com/process_form.php",
+			url: "http://localhost/sky2c/process_form.php",
 			data: data,
 			success: function(message) {
 				//alert("Server::"+message);
 				if(message == "sucess"){
-				var source = 'sky2c';			
-				/*jQuery("#message_box").removeClass("error"); 
-				jQuery("#message_box").html("Thank You for contacting Sky2C Freight Systems Inc. We have received your request and will reach out to you within 24 hours either by phone or email to discuss options. Please check your inbox for your copy. Sometimes, emails land in the junk folder so please make sure to check that as well. If you have not received your copy, please make sure the email you provided to contact us is accurate.");
-				var delay = 7000; 
-				setTimeout(function(){*/
-
-// function gtag_report_conversion(url) {
-//  var callback = function () {
-//   if (typeof(url) != 'undefined') {
-//      window.location = url;
-//   }
-//  };
-//  gtag('event', 'conversion', {
-//      'send_to': 'AW-1014275909/StS_CK7i3akBEMW-0uMD',
-//      'event_callback': callback
-//  });
-//  return false;
-// }
-									
+				var source = 'sky2c';							
 				window.location="https://www.sky2c.com/thanks.htm"; /* }, delay);*/
 				
 				jQuery("#ToZip").val("");
@@ -594,6 +574,7 @@ function checkbtnclick() {
 
 //domestic order form validation starts here
 function checkDomesticOrderForm() { 
+	// alert('hi there');
 	var er=0;
 	var foc ='';
 	var shipper_name = jQuery("#shipper_name").val();
@@ -618,7 +599,7 @@ function checkDomesticOrderForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 		
 	if (fullname('shipper_name')==false) { if(er==0) foc = 'shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -641,8 +622,7 @@ function checkDomesticOrderForm() {
 	if (IsEmail('consignee_email')==false) { if(er==0) foc = 'consignee_email'; er=1; }
 		
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
-	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; } 
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -680,7 +660,7 @@ function checkRoOrderForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (fullname('fcl_shipper_name')==false) { if(er==0) foc = 'fcl_shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -708,7 +688,7 @@ function checkRoOrderForm() {
 	if (IsEmail('consignee_email')==false) { if(er==0) foc = 'consignee_email'; er=1; }
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
 	
 	if(er==1) {
@@ -749,7 +729,7 @@ function checkOrderOnlineForm() {
 	var State = jQuery("#State").val();
 	var Place = jQuery("#Place").val();		
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (selectcon('ShipFrom')==false) { if(er==0) foc = 'ShipFrom'; er=1; }
 	if (fullname('Shipper')==false) { if(er==0) foc = 'Shipper'; er=1; }
@@ -785,7 +765,7 @@ function checkOrderOnlineForm() {
 	if (checkAgreeBox1('agree1')==false) { if(er==0) foc = 'agreebox1'; er=1; }
 	
 	
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -810,7 +790,7 @@ function check_householdForm() {
 	var ToCountry = jQuery("#ToCountry").val();
 	var ToZip = jQuery("#ToZip").val();
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (fullname('hname')==false) { if(er==0) foc = 'hname'; er=1; }
 	if (IsEmail('email')==false) { if(er==0) foc = 'email'; er=1; }	
@@ -824,7 +804,7 @@ function check_householdForm() {
 	if (selectcon('ToCountry')==false) { if(er==0) foc = 'ToCountry'; er=1; }
 	if (selectcon('ToZip')==false) { if(er==0) foc = 'ToZip'; er=1; }	
 	
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -846,7 +826,7 @@ jQuery("#hhformbtn").click(function() {
 	var ToCountry = jQuery("#ToCountry").val();
 	var ToZip = jQuery("#ToZip").val();
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (fullname('hname')==false) { if(er==0) foc = 'hname'; er=1; }
 	if (IsEmail('email')==false) { if(er==0) foc = 'email'; er=1; }	
@@ -860,7 +840,7 @@ jQuery("#hhformbtn").click(function() {
 	if (selectcon('ToCountry')==false) { if(er==0) foc = 'ToCountry'; er=1; }
 	if (selectcon('ToZip')==false) { if(er==0) foc = 'ToZip'; er=1; }	
 	
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; er=1; }
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; er=1; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -882,14 +862,14 @@ function checkContactForm() {
 	var csubject = jQuery("#csubject").val();
 	var cmessage = jQuery("#cmessage").val();
 	
-	var response = grecaptcha.getResponse();
+	// var response = grecaptcha.getResponse();
 	
 	if (fullname('cname')==false) { if(er==0) foc = 'cname'; er=1; }
 	if (IsEmail('cemail')==false) { if(er==0) foc = 'cemail'; er=1; }	
 	if (selectcon('csubject')==false) { if(er==0) foc = 'csubject'; er=1; }
 	if (selectcon('cmessage')==false) { if(er==0) foc = 'cmessage'; er=1; }
 	
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -904,20 +884,20 @@ jQuery("#submitbtn").click(function(){
 	var cemail = jQuery("#cemail").val();
 	var csubject = jQuery("#csubject").val();
 	var cmessage = jQuery("#cmessage").val();	
-	var response = grecaptcha.getResponse();	
+	// var response = grecaptcha.getResponse();	
 	
 	if(fullname('cname')==false){ if(er==0) foc = 'cname'; er=1; }
 	if(IsEmail('cemail')==false){ if(er==0) foc = 'cemail'; er=1; }
 	if(selectcon('csubject')==false){ if(er==0) foc = 'csubject'; er=1; }
 	if(selectcon('cmessage')==false){ if(er==0) foc = 'cmessage'; er=1; }
 	
-	if(response.length === 0){ 
-		if(er==0) foc = 'grecaptcha'; 
-		document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; 
-		er=1; 
-	}else{ 
-		document.getElementById("grecaptcha").style.borderBottom = "none"; 
-	}
+	// if(response.length === 0){ 
+	// 	if(er==0) foc = 'grecaptcha'; 
+	// 	document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; 
+	// 	er=1; 
+	// }else{ 
+	// 	document.getElementById("grecaptcha").style.borderBottom = "none"; 
+	// }
 		
 	if(er==1){
 		document.getElementById(foc).focus();
@@ -1028,9 +1008,8 @@ function commericalCargoForm() {
 	var ucompany = jQuery("#ucompany").val();
 	var uemail = jQuery("#uemail").val();
 	var uphone = jQuery("#uphone").val();
-	var message = jQuery("#message").val();
-	
-	var response = grecaptcha.getResponse();
+	var message = jQuery("#message").val();	
+	// var response = grecaptcha.getResponse();
 	
 	if (selectcon('uname')==false) { if(er==0) foc = 'uname'; er=1; }
 	if (selectcon('ucompany')==false) { if(er==0) foc = 'ucompany'; er=1; }
@@ -1038,7 +1017,7 @@ function commericalCargoForm() {
 	if (contactCustomWithCountryCode('uphone',10,20)==false) { if(er==0) foc = 'uphone'; er=1; }
 	if (selectcon('message')==false) { if(er==0) foc = 'message'; er=1; }
 	
-	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -1051,7 +1030,8 @@ function commericalCargoForm() {
 	    
 	    jQuery.ajax({
 			type: "POST",
-			url: "https://www.sky2c.com/send-commericalcargorequest.php",
+			// url: "https://www.sky2c.com/send-commericalcargorequest.php",
+			url: "http://localhost/sky2c/send-commericalcargorequest.php",
 			data: data,
 			success: function(message) {
 			

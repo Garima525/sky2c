@@ -314,7 +314,6 @@ jQuery(document).ready(function(){
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts/scrolltofade.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/smk-accordion.js" defer></script>*/ ?>
 
-
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts/customization.js?a=12"></script>
 <script src="<?php echo site_url(); ?>/js/validation.js?ver=2.0"></script>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/videoplayer/video-js.css?v=2" />
@@ -437,7 +436,7 @@ jQuery(document).ready(function($){
 </script>
 <script>
 jQuery(function(){ 
-	var token = '<?php echo $_SESSION['token']?>'; 
+	var token = '<?php echo $_SESSION['token'];?>'; 
 	//jQuery("#csrtoken").val(token);
 	document.getElementById("csrtoken").value = token;
 });

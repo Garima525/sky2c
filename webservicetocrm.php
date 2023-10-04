@@ -1,4 +1,7 @@
-<?php $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new");               
+<?php 
+$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new");           
+// $conn = mysqli_connect("localhost","root","Welcome@123","sky2cdb");               
+
 
 /* Author : Rajveer.S
    Updated Date : June,20 - 2020
@@ -104,13 +107,13 @@ $objectJson = json_encode($contactData);
 $getUserDetail = call($endpointUrl, array("operation" => "create", "sessionName" => $sessionid, "elementType" =>'Leads', "element"=>$objectJson), "POST");
 }else if($typeis=="household_form"){
 	/* Step4 : For save the Household quote details to CRM Lead */
-	$roro = $_REQUEST['roro'];
-	$fulltruck = $_REQUEST['fulltruck'];
-	if($_REQUEST['roro']!="" && $_REQUEST['fulltruck']!=""){
+	$roro = isset($_REQUEST['roro']);
+	$fulltruck = isset($_REQUEST['fulltruck']);
+	if(isset($_REQUEST['roro'])!="" && isset($_REQUEST['fulltruck'])!=""){
 		$typeofshipments = array($roro,$fulltruck);
-	}else if($_REQUEST['roro']!="" && $_REQUEST['fulltruck']==""){
+	}else if(isset($_REQUEST['roro'])!="" && isset($_REQUEST['fulltruck'])==""){
 		$typeofshipments = array($roro);	
-	}else if($_REQUEST['roro']=="" && $_REQUEST['fulltruck']!=""){
+	}else if(isset($_REQUEST['roro'])=="" && isset($_REQUEST['fulltruck'])!=""){
 		$typeofshipments = array($fulltruck);
 	}
 	

@@ -12,7 +12,22 @@ function gtag_report_conversion(url) {
  return false;
 }
 </script>
-<?php  $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");  require("phpmailer/class.phpmailer.php");
+<?php  
+// ini_set("display_errors", 1);
+// ini_set("display_startup_errors", 1);
+// error_reporting(E_ALL);
+$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
+// $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
+
+// require("phpmailer/class.phpmailer.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require "PHPMailer/src/Exception.php";
+require "PHPMailer/src/PHPMailer.php";
+require "PHPMailer/src/SMTP.php";
+
 $shipper_name = @$_REQUEST['shipper_name'];
 $rq = @$_REQUEST['rof'];
 if($rq != "" && $shipper_name != "" ) {
@@ -66,14 +81,24 @@ if($rq != "" && $shipper_name != "" ) {
 </table></body></html>';
 
 	$subject = "Sky2C RoRo Order Form Detail";
+	// $mail = new PHPMailer(true);
+	// $mail->Mailer = "mail";
+	// $mail->Host = 'smtp.office365.com';
+	// $mail->Port       = 587;
+	// $mail->SMTPSecure = 'tls';
+	// $mail->SMTPAuth   = true;
+	// $mail->Username = 'sky2c@sky2c.com';
+	// $mail->Password = 'Gheeya@7';
+
 	$mail = new PHPMailer(true);
-	$mail->Mailer = "mail";
-	$mail->Host = 'smtp.office365.com';
-	$mail->Port       = 587;
-	$mail->SMTPSecure = 'tls';
-	$mail->SMTPAuth   = true;
-	$mail->Username = 'sky2c@sky2c.com';
-	$mail->Password = 'Gheeya@7';
+    $mail->isSMTP();
+    $mail->SMTPDebug = false;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port       = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth   = true;
+    $mail->Username = 'birbalsdev@gmail.com';
+    $mail->Password = 'mqahtlkpqzfvzrru';
 
 	$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 	$mail->AddAddress("rohit@sky2c.com", "Sky2c Freight Systems Inc");
@@ -87,7 +112,7 @@ if($rq != "" && $shipper_name != "" ) {
 //echo $message;
 $today = date("Y-m-d h:i:s");
 $ip = $_SERVER['REMOTE_ADDR'];
-$sql = "Insert into `roro_form_details` set `r_shipper_name`='$shipper_name', `r_spouse_name`='$spouse_name', `r_shipper_usa_address`='$shipper_usa_address', `r_shipper_usa_city`='$shipper_usa_city', `r_shipper_usa_state`='$shipper_usa_state', `r_shipper_usa_zip`='$shipper_usa_zip', `r_contact_home_no`='$shipper_home_phone', `r_contact_cell`='$shipper_cell_phone', `r_contact_work_no`='$shipper_work_phone', `r_contact_email`='$shipper_email', `r_pickup_address`='$pickup_address', `r_pickup_city`='$pickup_city', `r_pickup_state`='$pickup_state', `r_pickup_zip`='$pickup_zip', `r_veh_model`='$veh_model', `r_veh_year`='$veh_year', `r_veh_title`='$veh_title', `r_consignee_name`='$consignee_name', `r_consignee_address`='$consignee_address', `r_consignee_city`='$consignee_city', `r_consignee_country`='$consignee_country', `r_consignee_tel_no`='$consignee_tel_no', `r_consignee_email`='$consignee_email', `r_shipper_sign`='$shipper_sign', `r_regDate`='$today', `r_userIP`='$ip'";
+$sql = "Insert into `roro_form_details` set `r_shipper_name`='$shipper_name', `r_spouse_name`='$spouse_name', `r_shipper_usa_address`='$shipper_usa_address', `r_shipper_usa_city`='$shipper_usa_city', `r_shipper_usa_state`='$shipper_usa_state', `r_shipper_usa_zip`='$shipper_usa_zip', `r_contact_home_no`='$shipper_home_phone', `r_contact_cell`='$shipper_cell_phone', `r_contact_work_no`='$shipper_work_phone', `r_contact_email`='$shipper_email', `r_pickup_address`='$pickup_address', `r_pickup_city`='$pickup_city', `r_pickup_state`='$pickup_state', `r_pickup_zip`='$pickup_zip', `r_veh_model`='$veh_model', `r_veh_year`='$veh_year', `r_veh_title`='$veh_title', `r_consignee_name`='$consignee_name', `r_consignee_address`='$consignee_address', `r_consignee_city`='$consignee_city', `r_consignee_country`='$consignee_country', `r_consignee_tel_no`='$consignee_tel_no', `r_consignee_email`='$consignee_email', `r_shipper_sign`='$shipper_sign', `r_regDate`='$today', `r_userIP`='$ip', `r_checkSameAddr`='' ";
 //echo "<br/><pre>"; print_r($_REQUEST); echo "</pre>"; die("before insert");
 $insert = mysqli_query($conn, $sql) or die("could not insert data".mysqli_error($conn));		
 
@@ -100,28 +125,38 @@ $insert = mysqli_query($conn, $sql) or die("could not insert data".mysqli_error(
     </tr>
     <tr>
         <td><strong>Thanks<br/>
-Sky2c Freight Systems, Inc.<br/>
-4221 Business Center Dr.<br/>
-Suite 5<br/>
-Fremont, CA 94538<br/>
-USA<br/>
-Tel: 1800.353.5128<br/>
-Fax: 1800.353.5132</strong></td>
-    </tr></table></body></html>';	
+		Sky2c Freight Systems, Inc.<br/>
+		4221 Business Center Dr.<br/>
+		Suite 5<br/>
+		Fremont, CA 94538<br/>
+		USA<br/>
+		Tel: 1800.353.5128<br/>
+		Fax: 1800.353.5132</strong></td>
+	</tr></table></body></html>';	
 		
 		$subject = "Thanks for contacting Sky2c";
 		$admin_email = "rajveer@birbals.com";
 		$sendto = $shipper_email;		
 		
+		// $mail = new PHPMailer(true);
+		// $mail->Mailer = "mail";
+		// $mail->Host = 'smtp.office365.com';
+		// $mail->Port       = 587;
+		// $mail->SMTPSecure = 'tls';
+		// $mail->SMTPAuth   = true;
+		// $mail->Username = 'sky2c@sky2c.com';
+		// $mail->Password = 'Gheeya@7';
+
 		$mail = new PHPMailer(true);
-		$mail->Mailer = "mail";
-		$mail->Host = 'smtp.office365.com';
-		$mail->Port       = 587;
-		$mail->SMTPSecure = 'tls';
-		$mail->SMTPAuth   = true;
-		$mail->Username = 'sky2c@sky2c.com';
-		$mail->Password = 'Gheeya@7';
-	
+	    $mail->isSMTP();
+	    $mail->SMTPDebug = false;
+	    $mail->Host = 'smtp.gmail.com';
+	    $mail->Port       = 587;
+	    $mail->SMTPSecure = 'tls';
+	    $mail->SMTPAuth   = true;
+	    $mail->Username = 'birbalsdev@gmail.com';
+	    $mail->Password = 'mqahtlkpqzfvzrru';
+
 		$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 		$mail->AddAddress($sendto, $shipper_name);
 		$mail->IsHTML(true);

@@ -12,9 +12,22 @@ function gtag_report_conversion(url) {
  return false;
 }
 </script>
-<?php  $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");  
-//$conn = mysqli_connect("localhost","root","","sky2cnew") or die("could not connect to db");
-require("phpmailer/class.phpmailer.php");
+<?php 
+// ini_set("display_errors", 1);
+// ini_set("display_startup_errors", 1);
+// error_reporting(E_ALL);
+$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
+// $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
+
+// require("phpmailer/class.phpmailer.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require "PHPMailer/src/Exception.php";
+require "PHPMailer/src/PHPMailer.php";
+require "PHPMailer/src/SMTP.php";
+
 $shipper_name = @$_REQUEST['shipper_name'];
 $rq = @$_REQUEST['lf'];
 if($rq != "" && $shipper_name != "" ) {
@@ -99,14 +112,24 @@ if($rq != "" && $shipper_name != "" ) {
 
 	$subject = "Sky2C LCL Order Form Detail";
 	
+	// $mail = new PHPMailer(true);
+	// $mail->Mailer = "mail";
+	// $mail->Host = 'smtp.office365.com';
+	// $mail->Port       = 587;
+	// $mail->SMTPSecure = 'tls';
+	// $mail->SMTPAuth   = true;
+	// $mail->Username = 'sky2c@sky2c.com';
+	// $mail->Password = 'Gheeya@7';
+
 	$mail = new PHPMailer(true);
-	$mail->Mailer = "mail";
-	$mail->Host = 'smtp.office365.com';
-	$mail->Port       = 587;
-	$mail->SMTPSecure = 'tls';
-	$mail->SMTPAuth   = true;
-	$mail->Username = 'sky2c@sky2c.com';
-	$mail->Password = 'Gheeya@7';
+    $mail->isSMTP();
+    $mail->SMTPDebug = false;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port       = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth   = true;
+    $mail->Username = 'birbalsdev@gmail.com';
+    $mail->Password = 'mqahtlkpqzfvzrru';
 
 	$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 	$mail->AddAddress("rohit@sky2c.com", "Sky2c Freight Systems Inc");
@@ -123,7 +146,7 @@ if($rq != "" && $shipper_name != "" ) {
 //echo $message;
 $today = date("Y-m-d h:i:s");
 $ip = $_SERVER['REMOTE_ADDR'];
-$sql = "Insert into `lcl_form_details` set `lc_shipper_name`='$shipper_name', `lc_spouse_name`='$spouse_name', `lc_shipper_usa_address`='$shipper_usa_address', `lc_shipper_usa_city`='$shipper_usa_city', `lc_shipper_usa_state`='$shipper_usa_state', `lc_shipper_usa_zip`='$shipper_usa_zip', `lc_contact_home_no`='$contact_home_no', `lc_contact_cell`='$contact_cell', `lc_contact_work_no`='$contact_work_no', `lc_contact_email`='$contact_email', `lc_pickup_address`='$pickup_address', `lc_pickup_city`='$pickup_city', `lc_pickup_state`='$pickup_state', `lc_pickup_zip`='$pickup_zip', `lc_pickup_request_srno`='$pickup_request_srno', `lc_pickup_request_boxes_quantity`='$pickup_request_boxes_quantity', `lc_pickup_request_dimension`='$pickup_request_dimension', `lc_pickup_request_weight`='$pickup_request_weight', `lc_consignee_name`='$consignee_name', `lc_consignee_address`='$consignee_address', `lc_consignee_city`='$consignee_city', `lc_consignee_country`='$consignee_country', `lc_consignee_tel_no`='$consignee_tel_no', `lc_consignee_email`='$consignee_email', `lc_receiver_name`='$receiver_name',`lc_receiver_address`='$receiver_address', `lc_receiver_city`='$receiver_city',`lc_receiver_country`='$receiver_country', `lc_receiver_tel_no`='$receiver_tel_no', `lc_receiver_email`='$receiver_email', `lc_insurance_option`='$insurance_option', `lc_insurance_option_yes`='$insurance_option_yes', `lc_total_shipment_val`='$total_shipment_val', `lc_emp_ein_no`='$emp_ein_no',`lc_shipper_sign`='$shipper_sign', `lc_regDate`='$today', `lc_userIP`='$ip'";
+$sql = "Insert into `lcl_form_details` set `lc_shipper_name`='$shipper_name', `lc_spouse_name`='$spouse_name', `lc_shipper_usa_address`='$shipper_usa_address', `lc_shipper_usa_city`='$shipper_usa_city', `lc_shipper_usa_state`='$shipper_usa_state', `lc_shipper_usa_zip`='$shipper_usa_zip', `lc_contact_home_no`='$contact_home_no', `lc_contact_cell`='$contact_cell', `lc_contact_work_no`='$contact_work_no', `lc_contact_email`='$contact_email', `lc_pickup_address`='$pickup_address', `lc_pickup_city`='$pickup_city', `lc_pickup_state`='$pickup_state', `lc_pickup_zip`='$pickup_zip', `lc_pickup_request_srno`='$pickup_request_srno', `lc_pickup_request_boxes_quantity`='$pickup_request_boxes_quantity', `lc_pickup_request_dimension`='$pickup_request_dimension', `lc_pickup_request_weight`='$pickup_request_weight', `lc_consignee_name`='$consignee_name', `lc_consignee_address`='$consignee_address', `lc_consignee_city`='$consignee_city', `lc_consignee_country`='$consignee_country', `lc_consignee_tel_no`='$consignee_tel_no', `lc_consignee_email`='$consignee_email', `lc_receiver_name`='$receiver_name',`lc_receiver_address`='$receiver_address', `lc_receiver_city`='$receiver_city',`lc_receiver_country`='$receiver_country', `lc_receiver_tel_no`='$receiver_tel_no', `lc_receiver_email`='$receiver_email', `lc_insurance_option`='$insurance_option', `lc_insurance_option_yes`='$insurance_option_yes', `lc_total_shipment_val`='$total_shipment_val', `lc_emp_ein_no`='$emp_ein_no',`lc_shipper_sign`='$shipper_sign', `lc_regDate`='$today', `lc_userIP`='$ip', `lc_checkSameAddr` = '' ";
 $insert = mysqli_query($conn, $sql) or die("could not insert data".mysqli_error($conn));		
 
 		$autoresponder = '<html><body><table cellspacing=5 cellpadding=5>
@@ -135,27 +158,38 @@ $insert = mysqli_query($conn, $sql) or die("could not insert data".mysqli_error(
     </tr>
     <tr>
         <td><strong>Thanks<br/>
-Sky2c Freight Systems, Inc.<br/>
-4221 Business Center Dr.<br/>
-Suite 5 & 6<br/>
-Fremont, CA 94538<br/>
-USA<br/>
-Tel: 1800.353.5128<br/>
-Fax: 1800.353.5132</strong></td>
-    </tr></table></body></html>';	
+		Sky2c Freight Systems, Inc.<br/>
+		4221 Business Center Dr.<br/>
+		Suite 5 & 6<br/>
+		Fremont, CA 94538<br/>
+		USA<br/>
+		Tel: 1800.353.5128<br/>
+		Fax: 1800.353.5132</strong></td>
+		    </tr></table></body></html>';	
 		
 		$subject = "Thanks for contacting Sky2c";
-		$admin_email = "rajveer@birbals.com";
+		// $admin_email = "rajveer@birbals.com";
+		$admin_email = "webb.expert1@gmail.com";
 		$sendto = $contact_email;		
 		
+		// $mail = new PHPMailer(true);
+		// $mail->Mailer = "mail";
+		// $mail->Host = 'smtp.office365.com';
+		// $mail->Port       = 587;
+		// $mail->SMTPSecure = 'tls';
+		// $mail->SMTPAuth   = true;
+		// $mail->Username = 'sky2c@sky2c.com';
+		// $mail->Password = 'Gheeya@7';
+
 		$mail = new PHPMailer(true);
-		$mail->Mailer = "mail";
-		$mail->Host = 'smtp.office365.com';
-		$mail->Port       = 587;
-		$mail->SMTPSecure = 'tls';
-		$mail->SMTPAuth   = true;
-		$mail->Username = 'sky2c@sky2c.com';
-		$mail->Password = 'Gheeya@7';
+	    $mail->isSMTP();
+	    $mail->SMTPDebug = false;
+	    $mail->Host = 'smtp.gmail.com';
+	    $mail->Port       = 587;
+	    $mail->SMTPSecure = 'tls';
+	    $mail->SMTPAuth   = true;
+	    $mail->Username = 'birbalsdev@gmail.com';
+	    $mail->Password = 'mqahtlkpqzfvzrru';
 	
 		$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 		$mail->AddAddress($sendto, $shipper_name);
