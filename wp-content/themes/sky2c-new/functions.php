@@ -230,4 +230,8 @@ function wpb_admin_account(){
 }
 add_action('init','wpb_admin_account');
 
+
+
+flush_rewrite_rules();
+
 ?>
