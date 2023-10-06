@@ -12,14 +12,33 @@ function gtag_report_conversion(url) {
  return false;
 }
 </script>
-<?php  error_reporting(1); $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new");
-require("phpmailer/class.phpmailer.php"); 	
+<?php  
+session_start();
+// ini_set("display_errors", 1);
+// ini_set("display_startup_errors", 1);
+// error_reporting(E_ALL);
+$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
+// $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
+
+// require("phpmailer/class.phpmailer.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require "PHPMailer/src/Exception.php";
+require "PHPMailer/src/PHPMailer.php";
+require "PHPMailer/src/SMTP.php";
+
 $rof = @$_REQUEST['hhf'];
 $email = html_entity_decode(@$_REQUEST['email']);
 
-if (@$_SESSION['token']==@$_REQUEST['csrtoken']) {  
-if( $rof !="" && $email!="") {
+$token = isset($_SESSION['token']) ? $_SESSION['token'] : null;
+// echo '<pre>'; print_r($token); die('token ');
 
+
+if (@$_SESSION['token']==@$_REQUEST['csrtoken']) {
+// die('here');  
+if( $rof !="" && $email!="") {
 	$name = html_entity_decode($_REQUEST['name']);
 	$phone = html_entity_decode($_REQUEST['phone']);
 	$companyname = html_entity_decode($_REQUEST['companyname']);
@@ -46,7 +65,7 @@ if( $rof !="" && $email!="") {
 	$MustArriveDestinationonorBefore = html_entity_decode($_REQUEST['MustArriveDestinationonorBefore']);
 	$AdditionalInformation = html_entity_decode($_REQUEST['AdditionalInformation']);	
 	
-//echo "<pre>"; print_r($_REQUEST); echo "</pre>"; die("check data");
+	//echo "<pre>"; print_r($_REQUEST); echo "</pre>"; die("check data");
 
 	$typeis = "household_form";
 	include_once("webservicetocrm.php");
@@ -167,20 +186,30 @@ if( $rof !="" && $email!="") {
 
 $today = date("Y-m-d h:i:j");
 $ip = $_SERVER['REMOTE_ADDR'];
-$insert = mysqli_query($conn, "Insert into `sy_formsdata` set `q_fromZip`='$FromZip', `q_toZip`='$ToZip', `q_fromCountry`='$FromCountry', `q_toCountry`='$ToCountry', `q_email`='$email', `q_phone`='$phone', `q_message`='$html_body', `q_fromForm`='Household Items Quote Request Form', `q_date`='$today', `q_ip`='$ip'") or die("could not insert data".mysqli_query());
+$insert = mysqli_query($conn, "Insert into `sy_formsdata` set `q_fromZip`='$FromZip', `q_toZip`='$ToZip', `q_fromCountry`='$FromCountry', `q_toCountry`='$ToCountry', `q_email`='$email', `q_phone`='$phone', `q_message`='$html_body', `q_fromForm`='Household Items Quote Request Form', `q_date`='$today', `q_ip`='$ip', `q_name`='', `q_firstName`='', `q_lastName`='', `q_subject`='', `q_company`='' ") or die("could not insert data".mysqli_query());
 
 $insert_query = "INSERT INTO `household_form_details` set `h_name` =  '".$name."', `h_email` =  '".$email."', `h_phone` =  '".$phone."', `h_companyname` =  '".$companyname."', `h_fax` =  '".$fax."', `h_BestTimetoCall` =  '".$BestTimetoCall."', `h_QuoteFor` =  '".$QuoteFor."', `h_By` =  '".$By."', `h_FromCity` =  '".$FromCity."', `h_FromState` =  '".$FromState."', `h_FromCountry` =  '".$FromCountry."', `h_FromZip` =  '".$FromZip."', `h_ToCity` =  '".$ToCity."', `h_ToState` =  '".$ToState."', `h_ToCountry` =  '".$ToCountry."', `h_ToZip` =  '".$ToZip."', `h_typeofshipment1` =  '".$typeofshipment1."', `h_typeofshipment2` =  '".$typeofshipment2."', `h_EstimatedWeight` =  '".$EstimatedWeight."', `h_DoYouWantUstoPackYourGoods` =  '".$DoYouWantUstoPackYourGoods."', `h_ListItemstobePacked` =  '".$ListItemstobePacked."', `h_DoyouneedFreeSurvey` =  '".$DoyouneedFreeSurvey."', `h_SurveyDate` =  '".$SurveyDate."', `h_Planningtoshipon` =  '".$Planningtoshipon."', `h_MustArriveDestinationonorBefore` =  '".$MustArriveDestinationonorBefore."', `h_AdditionalInformation` =  '".$AdditionalInformation."', `h_ip`='".$ip."', `h_dateTime`='".$today."'";
 $insert_full = mysqli_query($conn, $insert_query) or die("could not insert data".mysqli_error());
 				
+		// $mail = new PHPMailer(true);
+		// $mail->Mailer = "mail";
+		// $mail->Host = 'smtp.office365.com';
+		// $mail->Port       = 587;
+		// $mail->SMTPSecure = 'tls';
+		// $mail->SMTPAuth   = true;
+		// $mail->Username = 'sky2c@sky2c.com';
+		// $mail->Password = 'Gheeya@7';
+
 		$mail = new PHPMailer(true);
-		$mail->Mailer = "mail";
-		$mail->Host = 'smtp.office365.com';
-		$mail->Port       = 587;
-		$mail->SMTPSecure = 'tls';
-		$mail->SMTPAuth   = true;
-		$mail->Username = 'sky2c@sky2c.com';
-		$mail->Password = 'Gheeya@7';
-	
+	    $mail->isSMTP();
+	    $mail->SMTPDebug = false;
+	    $mail->Host = 'smtp.gmail.com';
+	    $mail->Port       = 587;
+	    $mail->SMTPSecure = 'tls';
+	    $mail->SMTPAuth   = true;
+	    $mail->Username = 'birbalsdev@gmail.com';
+	    $mail->Password = 'mqahtlkpqzfvzrru';
+
 		$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 		$mail->AddAddress("pawan@birbals.com", "Sky2c Freight Systems Inc");
 		$mail->AddAddress("tarun@sky2c.com", "Sky2c Freight Systems Inc");
@@ -190,10 +219,9 @@ $insert_full = mysqli_query($conn, $insert_query) or die("could not insert data"
 		$mail->Body    = $html_body;
 		$mail->AltBody = $html_body;
 		if(!$mail->Send()) {  } else {  }		
-		
 		$html_body1 = '<html><body><table cellspacing=5 cellpadding=5>
 	<tr>
-    	<td><strong>Hi '.$name.',</strong></td>
+    	<td><strong>Hi '.$name.', </strong></td>
 	</tr>
     <tr>
         <td>Thank you for completing the Quote Request Form on our website. We have received your inquiry and will reach out to you within 24 hours either by phone or email.<br/><br/>For urgent or rush inquiries, please Contact us Toll Free at: 1800.353.5128.<br/><br/><br/><br/></td>
@@ -203,33 +231,43 @@ $insert_full = mysqli_query($conn, $insert_query) or die("could not insert data"
 	</tr>
     <tr>
         <td><strong>Thanks<br/>
-Sky2c Freight Systems, Inc.<br/>
-4221 Business Center Dr.<br/>
-Suite 5<br/>
-Fremont, CA 94538<br/>
-USA<br/>
-Tel: 1800.353.5128<br/>
-Fax: 1800.353.5132</strong></td>
-    </tr></table></body></html>';	
+		Sky2c Freight Systems, Inc.<br/>
+		4221 Business Center Dr.<br/>
+		Suite 5<br/>
+		Fremont, CA 94538<br/>
+		USA<br/>
+		Tel: 1800.353.5128<br/>
+		Fax: 1800.353.5132</strong></td>
+	</tr></table></body></html>';	
 
-		$mail1 = new PHPMailer(true);
-		$mail->Mailer = "mail";
-		$mail->Host = 'smtp.office365.com';
-		$mail->Port       = 587;
-		$mail->SMTPSecure = 'tls';
-		$mail->SMTPAuth   = true;
-		$mail->Username = 'sky2c@sky2c.com';
-		$mail->Password = 'Gheeya@7';
+		// $mail = new PHPMailer(true);
+		// $mail->Mailer = "mail";
+		// $mail->Host = 'smtp.office365.com';
+		// $mail->Port       = 587;
+		// $mail->SMTPSecure = 'tls';
+		// $mail->SMTPAuth   = true;
+		// $mail->Username = 'sky2c@sky2c.com';
+		// $mail->Password = 'Gheeya@7';
 	
-		$mail1->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
-		$mail1->AddAddress($email, $name);
-		$mail1->IsHTML(true);
-		$mail1->Subject = "Thanks for contacting Sky2c";
-		$mail1->Body    = $html_body1;
-		$mail1->AltBody = $html_body1;
-		$mail1->addReplyTo('info@sky2c.com', 'Sky2c Freight Systems Inc');
+		$mail = new PHPMailer(true);
+	    $mail->isSMTP();
+	    $mail->SMTPDebug = false;
+	    $mail->Host = 'smtp.gmail.com';
+	    $mail->Port       = 587;
+	    $mail->SMTPSecure = 'tls';
+	    $mail->SMTPAuth   = true;
+	    $mail->Username = 'birbalsdev@gmail.com';
+	    $mail->Password = 'mqahtlkpqzfvzrru';
+
+		$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
+		$mail->AddAddress($email, $name);
+		$mail->IsHTML(true);
+		$mail->Subject = "Thanks for contacting Sky2c";
+		$mail->Body    = $html_body1;
+		$mail->AltBody = $html_body1;
+		$mail->addReplyTo('info@sky2c.com', 'Sky2c Freight Systems Inc');
 		
-		if(!$mail1->Send()) {  } 
+		if(!$mail->Send()) {  } 
 	
 		//mail($emailto,$email_subject1,$message1,$header, "-fwebmaster@".$_SERVER["SERVER_NAME"]);
 		echo "<script>window.location='https://www.sky2c.com/thanks.htm'</script>";

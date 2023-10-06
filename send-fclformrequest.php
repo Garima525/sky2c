@@ -12,9 +12,22 @@ function gtag_report_conversion(url) {
  return false;
 }
 </script>
-<?php error_reporting(1);  $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");  
-//$conn = mysqli_connect("localhost","root","","sky2cnew") or die("could not connect to db");  
-require("phpmailer/class.phpmailer.php");
+<?php 
+// ini_set("display_errors", 1);
+// ini_set("display_startup_errors", 1);
+// error_reporting(E_ALL);
+$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
+// $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
+
+// require("phpmailer/class.phpmailer.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require "PHPMailer/src/Exception.php";
+require "PHPMailer/src/PHPMailer.php";
+require "PHPMailer/src/SMTP.php";
+
 $shipper_name = @$_REQUEST['shipper_name'];
 $rq = @$_REQUEST['fl'];
 if($rq != "" && $shipper_name != "" ) {
@@ -97,15 +110,23 @@ if($rq != "" && $shipper_name != "" ) {
   <tr><th scope="row" align="left" col=="3">Please share the packing list of all the goods with estimated value.: </th><td>'. $fcl_packlist_estval.'</td></tr>
   <tr><th scope="row" align="left">Shipper Signature: </th><td>'. $fcl_shipper_sign.'</td><th scope="row" align="left"></th><td></td></tr>
 </table></body></html>';
-
 	$mail = new PHPMailer(true);
-	$mail->Mailer = "mail";
-	$mail->Host = 'smtp.office365.com';
-	$mail->Port       = 587;
-	$mail->SMTPSecure = 'tls';
-	$mail->SMTPAuth   = true;
-	$mail->Username = 'sky2c@sky2c.com';
-	$mail->Password = 'Gheeya@7';
+    $mail->isSMTP();
+    $mail->SMTPDebug = false;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port       = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth   = true;
+    $mail->Username = 'birbalsdev@gmail.com';
+    $mail->Password = 'mqahtlkpqzfvzrru';
+	// $mail = new PHPMailer(true);
+	// $mail->Mailer = "mail";
+	// $mail->Host = 'smtp.office365.com';
+	// $mail->Port       = 587;
+	// $mail->SMTPSecure = 'tls';
+	// $mail->SMTPAuth   = true;
+	// $mail->Username = 'sky2c@sky2c.com';
+	// $mail->Password = 'Gheeya@7';
 
 	$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 	$mail->AddAddress("rohit@sky2c.com", "Sky2c Freight Systems Inc");
@@ -130,27 +151,38 @@ if($rq != "" && $shipper_name != "" ) {
     </tr>
     <tr>
         <td><strong>Thanks<br/>
-Sky2c Freight Systems, Inc.<br/>
-4221 Business Center Dr.<br/>
-Suite 5 & 6<br/>
-Fremont, CA 94538<br/>
-USA<br/>
-Tel: 1800.353.5128<br/>
-Fax: 1800.353.5132</strong></td>
-    </tr></table></body></html>';	
+		Sky2c Freight Systems, Inc.<br/>
+		4221 Business Center Dr.<br/>
+		Suite 5 & 6<br/>
+		Fremont, CA 94538<br/>
+		USA<br/>
+		Tel: 1800.353.5128<br/>
+		Fax: 1800.353.5132</strong></td>
+		    </tr></table></body></html>';	
 		
 		$subject = "Thanks for contacting Sky2c";
-		$admin_email = "rajveer@birbals.com";
+		// $admin_email = "rajveer@birbals.com";
+		$admin_email = "webb.expert1@gmail.com";
 		$sendto = $shipper_email;		
-		
+
 		$mail = new PHPMailer(true);
-		$mail->Mailer = "mail";
-		$mail->Host = 'smtp.office365.com';
-		$mail->Port       = 587;
-		$mail->SMTPSecure = 'tls';
-		$mail->SMTPAuth   = true;
-		$mail->Username = 'sky2c@sky2c.com';
-		$mail->Password = 'Gheeya@7';
+        $mail->isSMTP();
+        $mail->SMTPDebug = false;
+        $mail->Host = 'smtp.gmail.com';
+        $mail->Port       = 587;
+        $mail->SMTPSecure = 'tls';
+        $mail->SMTPAuth   = true;
+        $mail->Username = 'birbalsdev@gmail.com';
+        $mail->Password = 'mqahtlkpqzfvzrru';
+		
+		// $mail = new PHPMailer(true);
+		// $mail->Mailer = "mail";
+		// $mail->Host = 'smtp.office365.com';
+		// $mail->Port       = 587;
+		// $mail->SMTPSecure = 'tls';
+		// $mail->SMTPAuth   = true;
+		// $mail->Username = 'sky2c@sky2c.com';
+		// $mail->Password = 'Gheeya@7';
 	
 		$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 		$mail->AddAddress($sendto, $shipper_name);

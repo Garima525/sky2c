@@ -1,8 +1,24 @@
-<?php session_start(); error_reporting(1); include("wp-config.php");
-$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new");
-require("phpmailer/class.phpmailer.php");
-if(@$_REQUEST['oform']!="")  {
+<?php session_start(); error_reporting(1); 
+// include("wp-config.php");
 
+// ini_set("display_errors", 1);
+// ini_set("display_startup_errors", 1);
+// error_reporting(E_ALL);
+$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
+// $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
+
+// require("phpmailer/class.phpmailer.php");
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require "PHPMailer/src/Exception.php";
+require "PHPMailer/src/PHPMailer.php";
+require "PHPMailer/src/SMTP.php";
+
+//die('here');
+if(@$_REQUEST['oform']!="")  {
+// die('here');
 	$email = html_entity_decode($_REQUEST['email']);
 	$subject = html_entity_decode($_REQUEST['subject']);
 	
@@ -417,30 +433,45 @@ if(@$_REQUEST['oform']!="")  {
 //echo $message;
 $today = date("M d, Y h:m");
 $ip = $_SERVER['REMOTE_ADDR'];
-$insert = mysqli_query($conn,"Insert into `sy_formsdata` set `q_fromZip`='$FromZip', `q_toZip`='$ToZip', `q_fromCountry`='$FromCountry', `q_toCountry`='$ToCountry', `q_email`='$FromEmail', `q_phone`='$FromNos', `q_message`='$html_body', `q_fromForm`='Order Online Form', `q_date`='$today', `q_ip`='$ip'") or die("could not insert data");		
+$insert = mysqli_query($conn,"Insert into `sy_formsdata` set `q_fromZip`='$FromZip', `q_toZip`='$ToZip', `q_fromCountry`='$FromCountry', `q_toCountry`='$ToCountry', `q_email`='$FromEmail', `q_phone`='$FromNos', `q_message`='$html_body', `q_fromForm`='Order Online Form', `q_date`='$today', `q_ip`='$ip', `q_name`='', `q_firstName`='', `q_lastName`='', `q_subject`='', `q_company`='' ") or die("could not insert data");		
 
 		$email_subject = $subject;
 		//$email_from =  $e_email;
 		
 		$admin_email = $email;
 		
-		$sendto = "tarun@sky2c.com";		
+		// $sendto = "tarun@sky2c.com";	
+		$sendto = "webb.expert1@gmail.com";		
+
 		//$sendto = "rajveer@birbals.com";		
 		
 		$subject = $email_subject;
 		$message = $html_body;		
 
-		$adminEmail = "info@sky2c.com";
+		// $adminEmail = "info@sky2c.com";
+		$adminEmail = "webb.expert1@gmail.com";
+
 		//$adminEmail = "rajveer@birbals.com";
 			
+			// $mail = new PHPMailer(true);
+			// $mail->Mailer = "mail";
+			// $mail->Host = 'smtp.office365.com';
+			// $mail->Port       = 587;
+			// $mail->SMTPSecure = 'tls';
+			// $mail->SMTPAuth   = true;
+			// $mail->Username = 'sky2c@sky2c.com';
+			// $mail->Password = 'Gheeya@7';
+
 			$mail = new PHPMailer(true);
-			$mail->Mailer = "mail";
-			$mail->Host = 'smtp.office365.com';
-			$mail->Port       = 587;
-			$mail->SMTPSecure = 'tls';
-			$mail->SMTPAuth   = true;
-			$mail->Username = 'sky2c@sky2c.com';
-			$mail->Password = 'Gheeya@7';
+		    $mail->isSMTP();
+		    $mail->SMTPDebug = false;
+		    $mail->Host = 'smtp.gmail.com';
+		    $mail->Port       = 587;
+		    $mail->SMTPSecure = 'tls';
+		    $mail->SMTPAuth   = true;
+		    $mail->Username = 'birbalsdev@gmail.com';
+		    $mail->Password = 'mqahtlkpqzfvzrru';
+
 			
 			$mail->SetFrom('sky2c@sky2c.com', 'Sky2c Freight Systems Inc');
 			$mail->AddAddress($adminEmail, "Sky2c Freight Systems Inc");

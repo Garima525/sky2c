@@ -80,10 +80,11 @@ window._fbq.push(['track', '6027690161360', {'value':'0.00','currency':'USD'}]);
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/combined_customization.css?v=3.16" />
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.js" defer></script> 
 
-<?php // session_start();
+<?php  session_start();
  $length = 32;
 $_SESSION['token'] = substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, $length); 
-//$session->set_userdata( 'csrtoken', $_SESSION['token'] );?>
+// echo '<pre>'; print_r($_SESSION['token']); die;
+// $session->set_userdata( 'csrtoken', $_SESSION['token'] );?>
 
 
 <style>
