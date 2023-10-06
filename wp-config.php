@@ -65,8 +65,8 @@ define('NONCE_SALT',       '>0^{Rzloiwd2,@Zw:Me{^tcct]tVPW]Kq%6_=kws]q@A,P4Fm5y:
 
 define('FS_METHOD', 'direct');
 
-define( 'WP_HOME', 'http://localhost/sky2c/' );
-define( 'WP_SITEURL', 'http://localhost/sky2c/' );
+//define( 'WP_HOME', 'http://localhost/sky2c/' );
+//define( 'WP_SITEURL', 'http://localhost/sky2c/' );
 /**#@-*/
 
 /**
