@@ -98,10 +98,10 @@ function videoResize() {
     var video_width = jQuery('.video_dummy').width();
     var video_height = Math.ceil(video_width / 1.77);
    // alert("this");
-    jQuery('#mainvideo').css({
-        // "width": video_width,
-        // "height": video_height
-    });
+    // jQuery('#mainvideo').css({
+    //     // "width": video_width,
+    //     // "height": video_height
+    // });
 	
     jQuery('#videocontainer').css({
         "height": video_height
