@@ -29,10 +29,10 @@
 define( 'DB_NAME', 'sky2cdb' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'sky2cdb' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'Welcome@123' );
+define( 'DB_PASSWORD', '9i2p[qFwN-jcG.[R' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -65,8 +65,8 @@ define('NONCE_SALT',       '>0^{Rzloiwd2,@Zw:Me{^tcct]tVPW]Kq%6_=kws]q@A,P4Fm5y:
 
 define('FS_METHOD', 'direct');
 
-define( 'WP_HOME', 'http://localhost/sky2c/' );
-define( 'WP_SITEURL', 'http://localhost/sky2c/' );
+//define( 'WP_HOME', 'http://localhost/sky2c/' );
+//define( 'WP_SITEURL', 'http://localhost/sky2c/' );
 /**#@-*/
 
 /**
