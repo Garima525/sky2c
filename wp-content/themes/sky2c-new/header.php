@@ -12,7 +12,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <?php /*<meta name="viewport" content="width=device-width">*/ ?>
-<meta name="viewport" content="width=device-width">
+
 <meta http-equiv="Content-Security-Policy"
   content="default-src 'self' data:gap: http://www.visitsingapore.com 
   https://ssl.gstatic.com 'unsafe-eval';
