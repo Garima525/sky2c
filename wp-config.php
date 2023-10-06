@@ -29,10 +29,10 @@
 define( 'DB_NAME', 'sky2cdb' );
 
 /** Database username */
-define( 'DB_USER', 'sky2cdb' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '9i2p[qFwN-jcG.[R' );
+define( 'DB_PASSWORD', 'Welcome@123' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
