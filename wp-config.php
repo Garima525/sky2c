@@ -19,9 +19,9 @@
  * @package WordPress
  */
 
-//define('FORCE_SSL_ADMIN', true);
-//define('RELOCATE', TRUE);
-//$_SERVER['HTTPS'] = 'on';
+// define('FORCE_SSL_ADMIN', true);
+// define('RELOCATE', TRUE);
+// $_SERVER['HTTPS'] = 'on';
 //define('WP_HOME','https://www.sky2c.com');
 //define('WP_SITEURL','https://www.sky2c.com');
 // ** Database settings - You can get this info from your web host ** //
@@ -63,10 +63,6 @@ define('SECURE_AUTH_SALT', ']-a,WT2b_zwYDK~ykB2AH3ceF*a<`]_Q!OLj]f)ir:]~2Lj*i-0z
 define('LOGGED_IN_SALT',   '1-A!pZ]dxuX11IZ{(Jqfw|!BFn1m1O6nTq1HSdW6-pXS1.:>8J}!e|ydw!g^eb+[');
 define('NONCE_SALT',       '>0^{Rzloiwd2,@Zw:Me{^tcct]tVPW]Kq%6_=kws]q@A,P4Fm5y:& >p-|/vzPB1');
 
-define('FS_METHOD', 'direct');
-
-// define( 'WP_HOME', 'http://localhost/sky2c/' );
-// define( 'WP_SITEURL', 'http://localhost/sky2c/' );
 /**#@-*/
 
 /**
@@ -76,7 +72,6 @@ define('FS_METHOD', 'direct');
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = 'sy_';
-
 
 /**
  * For developers: WordPress debugging mode.
@@ -96,9 +91,9 @@ define( 'WP_MEMORY_LIMIT', '256M' );
 /* Add any custom values between this line and the "stop editing" line. */
 
 
-//define( 'AUTOMATIC_UPDATER_DISABLED', true );
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
-//define( 'WP_AUTO_UPDATE_CORE', false );
+define( 'WP_AUTO_UPDATE_CORE', false );
 
 
 /* That's all, stop editing! Happy publishing. */
