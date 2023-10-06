@@ -12,7 +12,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <?php /*<meta name="viewport" content="width=device-width">*/ ?>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://trusted-domain.com; style-src 'self' 'unsafe-inline';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://trusted-domain.com; style-src 'self' 'sha256-LpfmXS+4ZtL2uPRZgkoR29Ghbxcfime/CsD/4w5VujE=';">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 <title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?></title>
 <?php if((is_front_page())){ }else{?>
