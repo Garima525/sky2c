@@ -28,6 +28,7 @@
 <![endif]-->
 <?php /*<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/fonts.css" />*/ ?>
 <?php wp_head(); ?>
+<meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline'">
 <link rel="stylesheet" href="https://use.typekit.net/bvx3pmh.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
