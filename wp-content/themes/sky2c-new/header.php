@@ -28,7 +28,8 @@
 <![endif]-->
 <?php /*<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/fonts.css" />*/ ?>
 <?php wp_head(); ?>
-<meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline'">
+<meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://www.google.com">
+
 <link rel="stylesheet" href="https://use.typekit.net/bvx3pmh.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
