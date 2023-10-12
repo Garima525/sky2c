@@ -144,5 +144,6 @@ if(@$_REQUEST['qf']==1) {
 	}else{
 		die("Invalid captcha");
 	}
+	echo "<script>window.location='https://sky2c.infodevbox.com/thanks.htm'</script>";
 } //if ends here
 ?>

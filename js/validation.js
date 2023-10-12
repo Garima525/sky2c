@@ -1031,14 +1031,16 @@ function commericalCargoForm() {
 	    
 	    jQuery.ajax({
 			type: "POST",
-			// url: "https://www.sky2c.com/send-commericalcargorequest.php",
-			url: "http://localhost/sky2c/send-commericalcargorequest.php",
+			url: "https://www.sky2c.com/send-commericalcargorequest.php",
+			// url: "http://localhost/sky2c/send-commericalcargorequest.php",
+
 			data: data,
 			success: function(message) {
 			
 				if(message == "sucess"){
 									
 				window.location="https://www.sky2c.com/thanks.htm"; 
+				
 				
 				jQuery("#uname").val("");
 				jQuery("#ucompany").val("");  
