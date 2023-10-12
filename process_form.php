@@ -1,7 +1,7 @@
 <?php 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 session_start();
 // $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new");
 $conn = mysqli_connect("localhost","sky2cdb","9i2p[qFwN-jcG.[R","sky2cdb");
@@ -135,7 +135,6 @@ if(@$_REQUEST['qf']==1) {
 				if(!$mail1->Send()) {  } else {  }
 				
 				echo "sucess";
-				echo "<script>window.location='https://sky2c.infodevbox.com/thanks.htm'</script>";
 
 		/*}else{
 			echo "sucess";
