@@ -538,7 +538,7 @@ function checkbtnclick() {
 			// url: "http://localhost/sky2c/process_form.php",
 			data: data,
 			success: function(message) {
-				//alert("Server::"+message);
+				alert("Server::"+message);
 				if(message == "sucess"){
 				// var source = 'sky2c';							
 				// window.location="https://www.sky2c.com/thanks.htm";
