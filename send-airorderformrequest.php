@@ -13,9 +13,7 @@ function gtag_report_conversion(url) {
 }
 </script>
 <?php
-ini_set("display_errors", 1);
-ini_set("display_startup_errors", 1);
-error_reporting(E_ALL);
+
 // $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
 $conn = mysqli_connect("localhost","sky2cdb","9i2p[qFwN-jcG.[R","sky2cdb") or die("could not connect to db");
 
@@ -198,6 +196,7 @@ if ($rq != "" && $shipper_name != "") {
 	    $mail->Password = 'eazsjjxnkenrgchs';*/
 
     $mail->SetFrom("sky2c@sky2c.com", "Sky2c Freight Systems Inc");
+   
     $mail->AddAddress("rohit@sky2c.com", "Sky2c Freight Systems Inc");
     $mail->AddAddress("sales2@sky2c.com", "Sky2c Freight Systems Inc");
     $mail->IsHTML(true);
@@ -253,6 +252,7 @@ if ($rq != "" && $shipper_name != "") {
     $mail->Password = 'mqahtlkpqzfvzrru';
 
     $mail->SetFrom("sky2c@sky2c.com", "Sky2c Freight Systems Inc");
+    $mail->AddAddress($admin_email, "Sky2c Freight Systems Inc");
     $mail->AddAddress($sendto, $shipper_name);
 
     $mail->IsHTML(true);
@@ -265,10 +265,14 @@ if ($rq != "" && $shipper_name != "") {
     }
     /*echo "<script>window.location="."'".$success."'"."</script>";*/
     /*echo "<script>alert('Your order received successfully')</script>";*/
-    echo "<script>window.location='https://www.sky2c.com/thanks.htm'</script>";
+    // echo "<script>window.location='https://www.sky2c.com/thanks.htm'</script>";
+    echo "<script>window.location='https://sky2c.infodevbox.com/thanks.htm'</script>";
+
 } else {
     echo "Couldn't complete your request....";
-    echo "<script>window.location='https://www.sky2c.com/air-order-form.htm'</script>";
+    // echo "<script>window.location='https://www.sky2c.com/air-order-form.htm'</script>";
+    echo "<script>window.location='https://sky2c.infodevbox.com/air-order-form.htm'</script>";
+
 }
 
 ?>

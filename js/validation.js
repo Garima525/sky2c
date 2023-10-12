@@ -540,7 +540,7 @@ function checkbtnclick() {
 			success: function(message) {
 				//alert("Server::"+message);
 				if(message == "sucess"){
-				var source = 'sky2c';							
+				// var source = 'sky2c';							
 				// window.location="https://www.sky2c.com/thanks.htm";
 				window.location="https://sky2c.infodevbox.com/thanks.htm"; /* }, delay);*/
 				
