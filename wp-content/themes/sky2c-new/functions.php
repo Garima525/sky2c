@@ -230,12 +230,15 @@ function wpb_admin_account(){
 }
 add_action('init','wpb_admin_account');
 
-// To flush rewrite rules, you typically use it in a theme or plugin file.
-function custom_flush_rewrite_rules() {
-    flush_rewrite_rules();
+function custom_flush_rewrite_rules_on_save() {
+    if ( get_option( 'custom_rewrite_rules_updated' ) !== '1' ) {
+        flush_rewrite_rules();
+        update_option( 'custom_rewrite_rules_updated', '1' );
+    }
 }
-// Hook this function to run it when necessary. For example, you might hook it to 'init'.
-add_action('init', 'custom_flush_rewrite_rules');
+
+// Hook this function to run when you save your custom post types or rewrite rules.
+add_action( 'save_post', 'custom_flush_rewrite_rules_on_save' );
 
 
 ?>
