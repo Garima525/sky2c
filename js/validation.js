@@ -541,7 +541,8 @@ function checkbtnclick() {
 				//alert("Server::"+message);
 				if(message == "sucess"){
 				var source = 'sky2c';							
-				window.location="https://www.sky2c.com/thanks.htm"; /* }, delay);*/
+				// window.location="https://www.sky2c.com/thanks.htm";
+				window.location="https://sky2c.infodevbox.com/thanks.htm"; /* }, delay);*/
 				
 				jQuery("#ToZip").val("");
 				jQuery("#FromZip").val("");  
