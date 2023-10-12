@@ -197,7 +197,7 @@ function checkAirOrderForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	/*var receiver_name = jQuery("#receiver_name").val();
 	var receiver_address = jQuery("#receiver_address").val();
@@ -233,7 +233,7 @@ function checkAirOrderForm() {
 	if (IsEmail('receiver_email')==false) { if(er==0) foc = 'receiver_email'; er=1; }*/
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -389,7 +389,7 @@ function checkFCLForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (fullname('fcl_shipper_name')==false) { if(er==0) foc = 'fcl_shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -413,7 +413,7 @@ function checkFCLForm() {
 	if (IsEmail('consignee_email')==false) { if(er==0) foc = 'consignee_email'; er=1; }
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -456,7 +456,7 @@ function checkLclOrderForm() {
 	var receiver_tel_no = jQuery("#receiver_tel_no").val();
 	var receiver_email = jQuery("#receiver_email").val();
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (fullname('shipper_name')==false) { if(er==0) foc = 'shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -485,7 +485,7 @@ function checkLclOrderForm() {
 	if (IsEmail('receiver_email')==false) { if(er==0) foc = 'receiver_email'; er=1; }
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
 	
 	if(er==1) {
@@ -600,7 +600,7 @@ function checkDomesticOrderForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 		
 	if (fullname('shipper_name')==false) { if(er==0) foc = 'shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -623,7 +623,7 @@ function checkDomesticOrderForm() {
 	if (IsEmail('consignee_email')==false) { if(er==0) foc = 'consignee_email'; er=1; }
 		
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; } 
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; } 
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -661,7 +661,7 @@ function checkRoOrderForm() {
 	var consignee_tel_no = jQuery("#consignee_tel_no").val();
 	var consignee_email = jQuery("#consignee_email").val();	
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (fullname('fcl_shipper_name')==false) { if(er==0) foc = 'fcl_shipper_name'; er=1; }
 	if (fullname('spouse_name')==false) { if(er==0) foc = 'spouse_name'; er=1; }
@@ -689,7 +689,7 @@ function checkRoOrderForm() {
 	if (IsEmail('consignee_email')==false) { if(er==0) foc = 'consignee_email'; er=1; }
 	
 	if (checkAgreeBox('agree')==false) { if(er==0) foc = 'agreebox'; er=1; }
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	//if(jQuery("#agree").prop('checked') == false){ if(er==0) document.getElementById("agreebox").style.border = "1px solid red"; er=1; return false; } 
 	
 	if(er==1) {
@@ -730,7 +730,7 @@ function checkOrderOnlineForm() {
 	var State = jQuery("#State").val();
 	var Place = jQuery("#Place").val();		
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (selectcon('ShipFrom')==false) { if(er==0) foc = 'ShipFrom'; er=1; }
 	if (fullname('Shipper')==false) { if(er==0) foc = 'Shipper'; er=1; }
@@ -766,7 +766,7 @@ function checkOrderOnlineForm() {
 	if (checkAgreeBox1('agree1')==false) { if(er==0) foc = 'agreebox1'; er=1; }
 	
 	
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -791,7 +791,7 @@ function check_householdForm() {
 	var ToCountry = jQuery("#ToCountry").val();
 	var ToZip = jQuery("#ToZip").val();
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (fullname('hname')==false) { if(er==0) foc = 'hname'; er=1; }
 	if (IsEmail('email')==false) { if(er==0) foc = 'email'; er=1; }	
@@ -805,7 +805,7 @@ function check_householdForm() {
 	if (selectcon('ToCountry')==false) { if(er==0) foc = 'ToCountry'; er=1; }
 	if (selectcon('ToZip')==false) { if(er==0) foc = 'ToZip'; er=1; }	
 	
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -827,7 +827,7 @@ jQuery("#hhformbtn").click(function() {
 	var ToCountry = jQuery("#ToCountry").val();
 	var ToZip = jQuery("#ToZip").val();
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (fullname('hname')==false) { if(er==0) foc = 'hname'; er=1; }
 	if (IsEmail('email')==false) { if(er==0) foc = 'email'; er=1; }	
@@ -841,7 +841,7 @@ jQuery("#hhformbtn").click(function() {
 	if (selectcon('ToCountry')==false) { if(er==0) foc = 'ToCountry'; er=1; }
 	if (selectcon('ToZip')==false) { if(er==0) foc = 'ToZip'; er=1; }	
 	
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; er=1; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; er=1; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -863,14 +863,14 @@ function checkContactForm() {
 	var csubject = jQuery("#csubject").val();
 	var cmessage = jQuery("#cmessage").val();
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (fullname('cname')==false) { if(er==0) foc = 'cname'; er=1; }
 	if (IsEmail('cemail')==false) { if(er==0) foc = 'cemail'; er=1; }	
 	if (selectcon('csubject')==false) { if(er==0) foc = 'csubject'; er=1; }
 	if (selectcon('cmessage')==false) { if(er==0) foc = 'cmessage'; er=1; }
 	
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -885,20 +885,20 @@ jQuery("#submitbtn").click(function(){
 	var cemail = jQuery("#cemail").val();
 	var csubject = jQuery("#csubject").val();
 	var cmessage = jQuery("#cmessage").val();	
-	// var response = grecaptcha.getResponse();	
+	var response = grecaptcha.getResponse();	
 	
 	if(fullname('cname')==false){ if(er==0) foc = 'cname'; er=1; }
 	if(IsEmail('cemail')==false){ if(er==0) foc = 'cemail'; er=1; }
 	if(selectcon('csubject')==false){ if(er==0) foc = 'csubject'; er=1; }
 	if(selectcon('cmessage')==false){ if(er==0) foc = 'cmessage'; er=1; }
 	
-	// if(response.length === 0){ 
-	// 	if(er==0) foc = 'grecaptcha'; 
-	// 	document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; 
-	// 	er=1; 
-	// }else{ 
-	// 	document.getElementById("grecaptcha").style.borderBottom = "none"; 
-	// }
+	if(response.length === 0){ 
+		if(er==0) foc = 'grecaptcha'; 
+		document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; 
+		er=1; 
+	}else{ 
+		document.getElementById("grecaptcha").style.borderBottom = "none"; 
+	}
 		
 	if(er==1){
 		document.getElementById(foc).focus();
@@ -1010,7 +1010,7 @@ function commericalCargoForm() {
 	var uemail = jQuery("#uemail").val();
 	var uphone = jQuery("#uphone").val();
 	var message = jQuery("#message").val();	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (selectcon('uname')==false) { if(er==0) foc = 'uname'; er=1; }
 	if (selectcon('ucompany')==false) { if(er==0) foc = 'ucompany'; er=1; }
@@ -1018,7 +1018,7 @@ function commericalCargoForm() {
 	if (contactCustomWithCountryCode('uphone',10,20)==false) { if(er==0) foc = 'uphone'; er=1; }
 	if (selectcon('message')==false) { if(er==0) foc = 'message'; er=1; }
 	
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 		
 	if(er==1) {
 		document.getElementById(foc).focus();

@@ -16,7 +16,9 @@ function gtag_report_conversion(url) {
 // ini_set("display_errors", 1);
 // ini_set("display_startup_errors", 1);
 // error_reporting(E_ALL);
-$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
+$conn = mysqli_connect("localhost","sky2cdb","9i2p[qFwN-jcG.[R","sky2cdb") or die("could not connect to db");
+
+// $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
 // $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
 
 // require("phpmailer/class.phpmailer.php");
@@ -135,7 +137,9 @@ $insert = mysqli_query($conn, $sql) or die("could not insert data".mysqli_error(
 	</tr></table></body></html>';	
 		
 		$subject = "Thanks for contacting Sky2c";
-		$admin_email = "rajveer@birbals.com";
+		// $admin_email = "rajveer@birbals.com";
+		$admin_email = "webb.expert1@gmail.com";
+
 		$sendto = $shipper_email;		
 		
 		// $mail = new PHPMailer(true);

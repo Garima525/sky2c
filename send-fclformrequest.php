@@ -16,7 +16,9 @@ function gtag_report_conversion(url) {
 // ini_set("display_errors", 1);
 // ini_set("display_startup_errors", 1);
 // error_reporting(E_ALL);
-$conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
+$conn = mysqli_connect("localhost","sky2cdb","9i2p[qFwN-jcG.[R","sky2cdb") or die("could not connect to db");
+
+// $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
 // $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
 
 // require("phpmailer/class.phpmailer.php");
@@ -104,7 +106,7 @@ if($rq != "" && $shipper_name != "" ) {
   <tr><th scope="row" align="left">Consignee Name: </th><td>'. $consignee_name.'</td><th scope="row" align="left">Address: </th><td>'. $consignee_address.'</td></tr>
   <tr><th scope="row" align="left">City: </th><td>'. $consignee_city.'</td><th scope="row" align="left">Country: </th><td>'. $consignee_country.'</td></tr>
   <tr><th scope="row" align="left">Tel No: </th><td>'. $consignee_tel_no.'</td><th scope="row" align="left">Email: </th><td>'. $consignee_email.'</td></tr>
-  <tr><th scope="row" align="left" col=="3">INSURANCE – YES or NO (If yes, then give us list of contents with valuation within 7 days from the date of pickup): </th><td>'. $fcl_insurance_option.'</td></tr>
+  <tr><th scope="row" align="left" col=="3">INSURANCE ï¿½ YES or NO (If yes, then give us list of contents with valuation within 7 days from the date of pickup): </th><td>'. $fcl_insurance_option.'</td></tr>
   <tr><th scope="row" align="left" col=="3">If yes, then: </th><td>'. $fcl_insurance_option_yes.'</td></tr>
   <tr><th scope="row" align="left">Total Value of Shipment: </th><td>'. $fcl_total_shipment_val.'</td><th scope="row" align="left">EIN (Employee Identification Number): </th><td>'. $fcl_emp_ein_no.'</td></tr>
   <tr><th scope="row" align="left" col=="3">Please share the packing list of all the goods with estimated value.: </th><td>'. $fcl_packlist_estval.'</td></tr>
