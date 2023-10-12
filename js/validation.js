@@ -509,7 +509,7 @@ function checkbtnclick() {
 	var CellPhone = jQuery("#CellPhone").val();
 	var Comments = jQuery("#Comments").val();
 	
-	// var response = grecaptcha.getResponse();
+	var response = grecaptcha.getResponse();
 	
 	if (alphanumeric('FromZip')==false) { if(er==0) foc = 'FromZip'; er=1; }	
 	if (alphanumeric('ToZip')==false) { if(er==0) foc = 'ToZip'; er=1; }	
@@ -523,7 +523,7 @@ function checkbtnclick() {
 	if (contactCustomWithCountryCode('CellPhone',10,20)==false) { if(er==0) foc = 'CellPhone'; er=1; }
 	if (selectcon('Comments')==false) { if(er==0) foc = 'Comments'; er=1; }
 	
-	// if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
+	if (response.length === 0) { if(er==0) foc = 'grecaptcha'; document.getElementById("grecaptcha").style.borderBottom = "1px solid red"; er=1; } else { document.getElementById("grecaptcha").style.borderBottom = "none"; }
 	
 	if(er==1) {
 		document.getElementById(foc).focus();
@@ -534,8 +534,8 @@ function checkbtnclick() {
 		var data = "ToZip="+ToZip+"&FromZip="+FromZip+"&Fromcountry="+Fromcountry+"&fname="+fname+"&lname="+lname+ "&Tocountry="+Tocountry+"&EmailAddress="+EmailAddress+"&CellPhone="+CellPhone+"&Comments="+Comments+"&qf=1";
 		  jQuery.ajax({
 			type: "POST",
-			// url: "https://www.sky2c.com/process_form.php",
-			url: "http://localhost/sky2c/process_form.php",
+			url: "https://sky2c.infodevbox.com/process_form.php",
+			// url: "http://localhost/sky2c/process_form.php",
 			data: data,
 			success: function(message) {
 				//alert("Server::"+message);
