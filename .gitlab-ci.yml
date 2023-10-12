@@ -17,7 +17,7 @@ deploy:
     - ssh-keyscan -p 2224 -H 15.207.56.8 >> ~/.ssh/known_hosts
 
     # Copy files to remote server
-    - rsync -e "ssh -p 2224" -r --delete-after --exclude=".git" ./ root@15.207.56.8:/var/www/html/sky2clive
+    - rsync -e "ssh -p 2224" -r --delete-after --exclude=".git" --exclude=".htaccess" ./ root@15.207.56.8:/var/www/html/sky2clive
     
     # SSH into remote server (if needed)
     # Use this step if you want to execute commands on the remote server after deployment
