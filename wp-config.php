@@ -19,13 +19,13 @@
  * @package WordPress
  */
 
-// define('FORCE_SSL_ADMIN', true);
-// define('RELOCATE', TRUE);
-// $_SERVER['HTTPS'] = 'on';
-//define('WP_HOME','https://www.sky2c.com');
-//define('WP_SITEURL','https://www.sky2c.com');
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+ define('FORCE_SSL_ADMIN', true);
+ define('RELOCATE', TRUE);
+ $_SERVER['HTTPS'] = 'on';
+define('WP_HOME','https://www.sky2c.com');
+define('WP_SITEURL','https://www.sky2c.com');
+ //** Database settings - You can get this info from your web host ** //
+//** The name of the database for WordPress */
 define( 'DB_NAME', 'sky2cdb' );
 
 /** Database username */
