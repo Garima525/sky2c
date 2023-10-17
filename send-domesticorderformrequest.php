@@ -18,7 +18,7 @@ function gtag_report_conversion(url) {
 // error_reporting(E_ALL);
 $conn = mysqli_connect("localhost","sky2cdb","9i2p[qFwN-jcG.[R","sky2cdb") or die("could not connect to db");
 // $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
-// $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
+
 
 // require("phpmailer/class.phpmailer.php");
 use PHPMailer\PHPMailer\PHPMailer;
