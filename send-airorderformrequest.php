@@ -17,8 +17,6 @@ function gtag_report_conversion(url) {
 // $conn = mysqli_connect("localhost","sky2co_skynew","J*{r4~Y&{(5{","sky2co_new") or die("could not connect to db");
 $conn = mysqli_connect("localhost","sky2cdb","9i2p[qFwN-jcG.[R","sky2cdb") or die("could not connect to db");
 
-// $conn = mysqli_connect("localhost", "root", "Welcome@123", "sky2cdb");
-
 // require("phpmailer/class.phpmailer.php");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -236,7 +234,7 @@ if ($rq != "" && $shipper_name != "") {
 			    </tr></table></body></html>';
 
     $subject = "Thanks for contacting Sky2c";
-//     $admin_email = "info@sky2c.com";
+//  $admin_email = "info@sky2c.com";
     $admin_email = "webb.expert1@gmail.com";
 
     $sendto = $contact_email;
@@ -265,14 +263,11 @@ if ($rq != "" && $shipper_name != "") {
     }
     /*echo "<script>window.location="."'".$success."'"."</script>";*/
     /*echo "<script>alert('Your order received successfully')</script>";*/
-    // echo "<script>window.location='https://www.sky2c.com/thanks.htm'</script>";
-    echo "<script>window.location='https://sky2c.infodevbox.com/thanks.htm'</script>";
+    echo "<script>window.location='https://www.sky2c.com/thanks.htm'</script>";
 
 } else {
     echo "Couldn't complete your request....";
-    // echo "<script>window.location='https://www.sky2c.com/air-order-form.htm'</script>";
-    echo "<script>window.location='https://sky2c.infodevbox.com/air-order-form.htm'</script>";
-
+    echo "<script>window.location='https://www.sky2c.com/air-order-form.htm'</script>";
 }
 
 ?>
