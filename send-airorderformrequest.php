@@ -234,8 +234,8 @@ if ($rq != "" && $shipper_name != "") {
 			    </tr></table></body></html>';
 
     $subject = "Thanks for contacting Sky2c";
-//  $admin_email = "info@sky2c.com";
-    $admin_email = "webb.expert1@gmail.com";
+    $admin_email = "info@sky2c.com";
+    // $admin_email = "webb.expert1@gmail.com";
 
     $sendto = $contact_email;
 
