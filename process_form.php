@@ -32,8 +32,8 @@ if(@$_REQUEST['qf']==1) {
 		unset($_SESSION['security_code']);
 
 		// $to = 'rajveer@birbals.com';
-		$to = 'webb.expert1@gmail.com';
-		//$to  = 'info@sky2c.com';
+		// $to = 'webb.expert1@gmail.com';
+		$to  = 'info@sky2c.com';
 
 		$subject = 'Enquiry from Quick Quote Form';
 
@@ -62,8 +62,8 @@ if(@$_REQUEST['qf']==1) {
 
 		$myvars = "fromzip=".$FromZip."&toZip=".$ToZip."&fromCountry=".$Fromcountry."&toCountry=".$Tocountry."&email=".$EmailAddress."&phone=".$CellPhone."&message=".$Comments;
 
-			// $adminEmail = "info@sky2c.com";
-			$adminEmail = "webb.expert1@gmail.com";
+			$adminEmail = "info@sky2c.com";
+			// $adminEmail = "webb.expert1@gmail.com";
 			//$adminEmail = "rajveer@birbals.com";
 			
 			/*$mail = new PHPMailer(true);

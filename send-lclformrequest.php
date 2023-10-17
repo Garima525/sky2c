@@ -171,7 +171,8 @@ $insert = mysqli_query($conn, $sql) or die("could not insert data".mysqli_error(
 		
 		$subject = "Thanks for contacting Sky2c";
 		// $admin_email = "rajveer@birbals.com";
-		$admin_email = "webb.expert1@gmail.com";
+		$admin_email  = 'info@sky2c.com';
+		// $admin_email = "webb.expert1@gmail.com";
 		$sendto = $contact_email;		
 		
 		// $mail = new PHPMailer(true);

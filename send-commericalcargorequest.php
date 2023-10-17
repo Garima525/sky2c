@@ -32,8 +32,8 @@ if(@$_REQUEST['cmf']==1) {
 		//unset($_SESSION['security_code']);
 
 		//$to = 'qa@birbals.com';
-	// $to  = 'info@sky2c.com';
-	$to  = 'webb.expert1@gmail.com';
+	$to  = 'info@sky2c.com';
+	// $to  = 'webb.expert1@gmail.com';
 
 		$subject = 'Commercial Cargo Quote Form';
     	$message3 = "<html><body><table width='100%' border='0' cellspacing='0' cellpadding='10' style='background-color:#D6D6D6;'><tr style='background-color:#005E5E; color:#FFF;'><th scope='row' colspan='2' align='center'><h2>Commercial Cargo Quote Form Detail</h2></th></tr><tr><th scope='row' colspan='2'><p>Details filled by user are following :- </p></th></tr><tr><th scope='row' align='left'>Name:</th><td>".$uname."</td></tr><tr><th scope='row' align='left'>Company:</th><td>".$ucompany."</td></tr><tr><th scope='row' align='left'>Email:</th><td>".$uemail."</td></tr><tr><th scope='row' align='left'>Phone:</th><td>".$uphone."</td></tr> <tr><th scope='row' align='left'>Message:</th><td>".$message."</td></tr></table></body></html>";
@@ -50,8 +50,8 @@ if(@$_REQUEST['cmf']==1) {
 
 	//	$myvars = "fromzip=".$FromZip."&toZip=".$ToZip."&fromCountry=".$Fromcountry."&toCountry=".$Tocountry."&email=".$EmailAddress."&phone=".$CellPhone."&message=".$Comments;
 
-			// $adminEmail = "info@sky2c.com";
-			$adminEmail = "webb.expert1@gmail.com";
+			$adminEmail = "info@sky2c.com";
+			// $adminEmail = "webb.expert1@gmail.com";
 			//$adminEmail = "anita@birbals.com";
 			
 			// $mail = new PHPMailer(true);
