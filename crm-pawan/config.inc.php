@@ -52,7 +52,7 @@ $HELPDESK_SUPPORT_EMAIL_REPLY_ID = $HELPDESK_SUPPORT_EMAIL_ID;
 $dbconfig['db_server'] = 'localhost';
 $dbconfig['db_port'] = ':3306';
 $dbconfig['db_username'] = 'sky2co_vtiger';
-$dbconfig['db_password'] = '(CQ?.]5!J^NH';
+$dbconfig['db_password'] = 'MDu-mkp(OZd)Si1L';
 $dbconfig['db_name'] = 'sky2co_vtiger';
 $dbconfig['db_type'] = 'mysqli';
 $dbconfig['db_status'] = 'true';
@@ -89,7 +89,7 @@ $site_URL = 'https://www.sky2c.com/crm-pawan/';
 // url for customer portal (Example: http://vtiger.com/portal)
 $PORTAL_URL = $site_URL.'/customerportal';
 // root directory path
-$root_directory = '/home/sky2co/public_html/crm-pawan/';
+$root_directory = '/var/www/html/sky2clive/crm-pawan/';
 
 // cache direcory path
 $cache_dir = 'cache/';
