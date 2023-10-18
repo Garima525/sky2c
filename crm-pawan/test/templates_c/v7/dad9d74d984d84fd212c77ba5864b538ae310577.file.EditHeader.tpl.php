@@ -1,0 +1,26 @@
+<?php /* Smarty version Smarty-3.1.7, created on 2018-01-16 17:13:00
+         compiled from "/home/skytwocc/public_html/crm-pawan/includes/runtime/../../layouts/v7/modules/Settings/Workflows/EditHeader.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:7718862805a5e329c9670a8-32218679%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'dad9d74d984d84fd212c77ba5864b538ae310577' => 
+    array (
+      0 => '/home/skytwocc/public_html/crm-pawan/includes/runtime/../../layouts/v7/modules/Settings/Workflows/EditHeader.tpl',
+      1 => 1496723290,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '7718862805a5e329c9670a8-32218679',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_5a5e329c9f135',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5a5e329c9f135')) {function content_5a5e329c9f135($_smarty_tpl) {?>
+
+
+
+<?php }} ?>

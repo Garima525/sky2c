@@ -1,0 +1,34 @@
+<?php /* Smarty version Smarty-3.1.7, created on 2018-01-19 06:37:21
+         compiled from "/home/skytwocc/public_html/crm-pawan/includes/runtime/../../layouts/v7/modules/Inventory/DetailViewFullContents.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:17932621725a61922141e637-40397813%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'ffb9fa8a4e417fdb6ea5e7778ec39d29e9d76fbe' => 
+    array (
+      0 => '/home/skytwocc/public_html/crm-pawan/includes/runtime/../../layouts/v7/modules/Inventory/DetailViewFullContents.tpl',
+      1 => 1496723290,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '17932621725a61922141e637-40397813',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'MODULE_NAME' => 0,
+    'RECORD_STRUCTURE' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_5a61922142c16',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5a61922142c16')) {function content_5a61922142c16($_smarty_tpl) {?>
+<form id="detailView" method="POST">
+    <?php echo $_smarty_tpl->getSubTemplate (vtemplate_path('DetailViewBlockView.tpl',$_smarty_tpl->tpl_vars['MODULE_NAME']->value), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('RECORD_STRUCTURE'=>$_smarty_tpl->tpl_vars['RECORD_STRUCTURE']->value,'MODULE_NAME'=>$_smarty_tpl->tpl_vars['MODULE_NAME']->value), 0);?>
+
+    <?php echo $_smarty_tpl->getSubTemplate (vtemplate_path('LineItemsDetail.tpl','Inventory'), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
+
+</form>
+<?php }} ?>

@@ -1,0 +1,3 @@
+#Options -Indexes
+
+max_execution_time=300
