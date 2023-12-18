@@ -534,7 +534,7 @@ function checkbtnclick() {
 		var data = "ToZip="+ToZip+"&FromZip="+FromZip+"&Fromcountry="+Fromcountry+"&fname="+fname+"&lname="+lname+ "&Tocountry="+Tocountry+"&EmailAddress="+EmailAddress+"&CellPhone="+CellPhone+"&Comments="+Comments+"&qf=1";
 		  jQuery.ajax({
 			type: "POST",
-			url: "http://localhost/sky2c/process_form.php",
+			url: "https://www.sky2c.com/process_form.php",
 			data: data,
 			success: function(message) {
 				//alert("Server::"+message);
